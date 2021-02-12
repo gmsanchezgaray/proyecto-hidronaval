@@ -3,7 +3,7 @@
 ?>
 
 <header class="header-container position-relative">
-        <nav class="main-nav hidro-container navbar navbar-expand-md">
+        <nav class="main-nav navbar navbar-expand-md">
                 <a class="navbar-brand" href="index.php">
 
                     <img src="css/img/img-logo-light.svg" height="60px" alt="img-logo-hidronaval">
@@ -32,9 +32,9 @@
                 </div>
         </nav>
 
-    <div class="info-header w-50 d-flex flex-column justify-content-center">
-        <h1 class="mb-3">Cursos de Oleohidraulica Naval</h1>
-        <p>Hemos diseñado cursos de Oleohidráulica. Si quieres conocer más sobre Olehidráulica, te ofrecemos una
+    <div class="info-header col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center">
+        <h1 class="mb-4">Cursos de Oleohidraulica Naval</h1>
+        <p class="mb-4">Hemos diseñado cursos de Oleohidráulica. Si quieres conocer más sobre Olehidráulica, te ofrecemos una
             Introducción <b>GRATIS</b>.</p>
             <form>
                 <div class="input-group mb-3">
@@ -47,7 +47,7 @@
     </div>
 </header>
 
-<section class="hidro-container hidro-cards d-flex justify-content-center position-absolute w-100">
+<section class="hidro-cards d-flex justify-content-center position-absolute w-100">
 
         <div class="card">
             <img src="css\img\instructor-capacitado-card.svg" alt="instructor-img">
@@ -81,6 +81,24 @@
             </div>
         </div>
 </section>
+
+<main>
+    <section class="nosotros d-flex justify-content-evenly">
+        <div class="img-info-instituto col-md-5">
+            <img src="css\img\img-estudios.png" alt="img-estudios">
+        </div>
+
+        <div class="info-instituto col-md-6">
+            <div class="info-container position-relative">
+                <span class="data-instituto-decorator mb-3">NOSOTROS</span>
+                <h3 class="mb-4">Hidronaval es una institucion de capacitacion.</h3>
+                <h4 class="mb-4">Técnicos que capacitan a mas técnicos</h4>
+                <p class="mb-4">Hidronaval  te ofrece una formación de calidad vía e-learning. Los programas de perfeccionamiento profesional están en crecimiento, debido al respaldo a los trabajadores para que aumenten su capacitación y se adapten a los nuevos requerimientos productivos. </p>
+                <a href="#" class="btn">Ver cursos</a>
+            </div>
+        </div>
+    </section>
+</main>
 
 <?php
 require "shared/footer.php";
