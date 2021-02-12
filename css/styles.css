@@ -14,6 +14,37 @@ html, body{
   /*Se resta 86px del alto del nav para ocupar el total del alto restante
   y quede perfectamente alineado al medio*/
 }
+.featurette {
+  color: #393739;
+}
+.featurette img {
+  width: 500px;
+  height: 500px;
+}
+.featurette .data-instituto-decorator {
+  display: inline-block;
+  color: #5A7CA4;
+  font-weight: 600;
+}
+.featurette .data-instituto-decorator::after {
+  content: '';
+  display:block;
+  height: 5px;
+  transform: skew(-40deg);
+  background: #5A7CA4;
+  width: 10%;
+}
+.featurette a{
+  font-size: 21px;
+  border-radius: 30px;
+  background-color: #F98131;
+  color: #fff;
+  width: 9rem;
+  transition: all 0.3s;
+}
+.featurette a:hover {
+  background-color: #ff6803;
+}
 /*-------------------------------FIN Santi */
 .hidro-container {
   padding: 0.5rem 5.5rem;
