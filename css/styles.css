@@ -4,22 +4,22 @@
   margin: 0;
   padding: 0;
 }
-/*------------------------------Inicio Santi*/
-html, body{
-  height:100%;
+
+html, body {
+  height: 100%;
   margin: 0;
 }
-.h-80{
-  height: calc( 100% - 86px ) ;
+
+.h-80 {
+  height: calc( 80% - 86px );
   /*Se resta 86px del alto del nav para ocupar el total del alto restante
-  y quede perfectamente alineado al medio*/
+  y quede perfectamente alineado al medio
+  Nico: Reemplaza 100% a 80% para lograr que el div de contenidos (titulo, parrafo e input)
+  esten en posicion vertical acorde al mockup */
 }
+
 .featurette {
   color: #393739;
-}
-.featurette img {
-  width: 500px;
-  height: 500px;
 }
 .featurette .data-instituto-decorator {
   display: inline-block;
@@ -27,14 +27,18 @@ html, body{
   font-weight: 600;
 }
 .featurette .data-instituto-decorator::after {
-  content: '';
-  display:block;
+  content: "";
+  display: block;
   height: 5px;
   transform: skew(-40deg);
   background: #5A7CA4;
   width: 10%;
 }
-.featurette a{
+.featurette img {
+  width: 400px;
+  height: 400px;
+}
+.featurette a {
   font-size: 21px;
   border-radius: 30px;
   background-color: #F98131;
@@ -42,49 +46,28 @@ html, body{
   width: 9rem;
   transition: all 0.3s;
 }
-.featurette a:hover {
-  background-color: #ff6803;
-}
-/*-------------------------------FIN Santi */
-.hidro-container {
-  padding: 0.5rem 5.5rem;
-  margin: 0 auto;
-}
 
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: #f0f0f0;
 }
+
 .header-container {
-/*  height: 100vh !important;*/
   height: 100% !important;
   background: -webkit-linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
   background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
-  /*Cambie el color a uno que se asemeja mas al mockup, el comentado es el viejo.
-  background-image: linear-gradient(to right, #3c53ac, rgba(107, 163, 238, 0.38)), url("img/img-header.jpg");
-  background: -webkit-linear-gradient(to right, #3c53ac, rgba(107, 163, 238, 0.38)), url("img/img-header.jpg");*/
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
 }
-
 .header-container .main-nav {
   background-color: transparent;
   color: #f0f0f0;
-/*  padding: 0.5rem 5.5rem; no necesario*/
 }
 .header-container .main-nav .collapse .navbar-nav .nav-item {
   padding: 0 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.header-container .main-nav .collapse .navbar-nav .nav-item .nav-link {
-  color: #ccc;
-  transition: all 0.3s;
-}
-.header-container .main-nav .collapse .navbar-nav .nav-item .nav-link:hover {
-  transform: scale(1.1, 1.1);
-  color: #FFF;
 }
 .header-container .main-nav .collapse .navbar-nav .nav-item .sesion {
   color: #f0f0f0;
@@ -95,25 +78,20 @@ body {
   background-color: #ff6803;
   color: #fff;
 }
-/* Ya no se necesita .info-header.
-.header-container .info-header {
-  margin-left: 6rem;
-  height: 60%;
+.header-container .main-nav .collapse .navbar-nav .nav-item .nav-link {
+  color: #ccc;
+  transition: all 0.3s;
 }
-.header-container .info-header h1 {
-  font-size: 42px;
+.header-container .main-nav .collapse .navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1, 1.1);
+  color: #FFF;
 }
-.header-container .info-header p {
-  letter-spacing: 1px;
-}*/
-/*.header-container .info-header form div .email-info { ORIGINAL*/
 .header-container form div .email-info {
   border: none;
   outline: none !important;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
-/*.header-container .info-header form div span { ORIGINAL*/
 .header-container form div span {
   background-color: #F98131;
   transition: all 0.3s;
@@ -121,7 +99,6 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-/*.header-container .info-header form div span .send-email { ORIGINAL*/
 .header-container form div span .send-email {
   border: none;
   outline: none;
@@ -130,13 +107,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/*.header-container .info-header form div span:hover { ORIGINAL*/
 .header-container form div span:hover {
   background-color: #ff6803;
 }
 
 .hidro-cards {
-/*  padding: 0.5rem 5.5rem; No es necesario el padding*/
   bottom: 5%;
 }
 .hidro-cards .card {

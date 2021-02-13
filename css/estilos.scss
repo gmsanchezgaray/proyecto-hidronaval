@@ -16,103 +16,118 @@ $espaciado: 0.5rem 5.5rem;
   padding: 0;
 }
 
-.hidro-container {
-  padding: 0.5rem 5.5rem;
-  margin: 0 auto;
+html, body{
+  height:100%;
+  margin: 0;
+}
+.h-80{
+  height: calc( 80% - 86px ) ;
+  /*Se resta 86px del alto del nav para ocupar el total del alto restante
+  y quede perfectamente alineado al medio
+  Nico: Reemplaza 100% a 80% para lograr que el div de contenidos (titulo, parrafo e input)
+  esten en posicion vertical acorde al mockup */
+}
+.featurette {
+  color: #393739;
+  .data-instituto-decorator {
+    display: inline-block;
+    color: #5A7CA4;
+    font-weight: 600;
+  }
+  .data-instituto-decorator::after {
+    content: '';
+    display:block;
+    height: 5px;
+    transform: skew(-40deg);
+    background: #5A7CA4;
+    width: 10%;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  a{
+    font-size: 21px;
+    border-radius: 30px;
+    background-color: #F98131;
+    color: #fff;
+    width: 9rem;
+    transition: all 0.3s;
+  }
 }
 
 body {
-  font-family: $font-family-base;
+  font-family: "Roboto Condensed", sans-serif;
   color: #f0f0f0;
 }
-
 .header-container {
-  height: 100vh !important;
-  background-image: linear-gradient(to right,rgba(60, 83, 172, 1), rgba(107, 163, 238, .38)), url('img/img-header.jpg');
-  background: -webkit-linear-gradient(to right, rgba(60, 83, 172, 1), rgb(107, 163, 238, .38)), url('img/img-header.jpg');
+  height: 100% !important;
+  background: -webkit-linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
+  background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
   .main-nav {
     background-color: transparent;
     color: #f0f0f0;
-    padding: $espaciado;
-      .collapse {
-        .navbar-nav {
-          .nav-item {
-            padding: 0px 8px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            .nav-link {
-              color: $color-off;
-              transition: all .3s;
-            }
-            .nav-link:hover {
-              transform: scale(1.1,1.1);
-              color: #FFF;
-            }
-            .sesion {
-              color: #f0f0f0;
-              transition: all .3s;
-              background-color: $color-primary;
-            }
-            .sesion:hover {
-              background-color:$color-primary-hover;
-              color: #fff;
-            }
-          }
-        }
-      }
-  }
-  .info-header {
-    margin-left: 6rem;
-    height: 60%;
-    h1 {
-      font-size: 42px;
-    }
-    p {
+    .collapse .navbar-nav .nav-item {
+      padding: 0 8px;
+      text-transform: uppercase;
       letter-spacing: 1px;
-    }
-    form {
-      
-      div {
-        .email-info {
-          border:none;
-          outline: none !important;
-          border-top-left-radius: 1rem;
-          border-bottom-left-radius: 1rem;
-        }
-        span {
-          background-color: $color-primary;
-          transition: all .3s;
-          border: none;
-          border-top-right-radius: 1rem;
-          border-bottom-right-radius: 1rem;
-          .send-email {
-            border: none;
-            outline: none;
-            color: #f0f0f0;
-            background-color: inherit;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-          }
-        }
-        span:hover {
-          background-color: $color-primary-hover;
-        }
+      .sesion {
+        color: #f0f0f0;
+        transition: all 0.3s;
+        background-color: #F98131;
       }
+      .sesion:hover {
+        background-color: #ff6803;
+        color: #fff;
+      }
+      .nav-link {
+        color: #ccc;
+        transition: all 0.3s;
+      }
+      .nav-link:hover {
+        transform: scale(1.1, 1.1);
+        color: #FFF;
+      }
+    }
+  }
+  form div {
+    .email-info {
+      border: none;
+      outline: none !important;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+    span {
+      background-color: #F98131;
+      transition: all 0.3s;
+      border: none;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      .send-email {
+        border: none;
+        outline: none;
+        color: #f0f0f0;
+        background-color: inherit;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+    span:hover {
+      background-color: #ff6803;
     }
   }
 }
 
 .hidro-cards {
-  padding: $espaciado;
   bottom: 5%;
   .card {
     width: 15rem !important;
     padding: 8px;
     margin: 8px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, .5);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
     text-align: center;
     img {
       width: 100%;
@@ -120,38 +135,33 @@ body {
     }
     .card-body {
       h5 {
-        color: $titulos;
+        color: #393739;
       }
       p {
-        color: $info;
+        color: #555D62;
       }
     }
   }
 }
 
-// ACA ARRANCAN LAS SECCIONES DEL MAIN 
 
 main {
-  padding: $espaciado;
+  padding: 0.5rem 5.5rem;
   .nosotros {
-    .img-info-instituto {
-      //border: 1px solid red;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .img-info-instituto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .info-instituto {
       display: flex;
       align-items: center;
-      //border: 1px solid red;
       .data-instituto-decorator {
         display: inline-block;
-        color: $decoradores;
+        color: #1E5799;
         font-weight: 600;
         padding-bottom: 4px;
-        border-bottom: 2px solid $decoradores;
+        border-bottom: 2px solid #1E5799;
         opacity: 60%;
       }
       h3 {
@@ -161,22 +171,22 @@ main {
         font-size: 1.5rem;
       }
       h3,h4 {
-        color: $titulos;
+        color: #393739;
       }
       p {
-        color: $info;
+        color: #555D62;
         font-size: 1rem;
       }
       a {
         font-size: 21px;
         border-radius: 30px;
-        background-color: $color-primary;
+        background-color: #F98131;
         color: #fff;
         width: 9rem;
-        transition: all .3s;
+        transition: all 0.3s;
       }
       a:hover {
-        background-color: $color-primary-hover;
+        background-color: #ff6803;
       }
     }
   }

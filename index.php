@@ -34,7 +34,7 @@
     </nav>
     <div class="container h-80">
         <div class="row align-items-center h-80">
-            <div class="col-md-5 text-center text-md-start">
+            <div class="col-sm-12 col-md-6 text-center text-md-start">
                 <h1>Cursos de <br>Oleohidraulica Naval</h1>
                 <p class="d-none d-md-block">Hemos diseñado cursos de Oleohidráulica. Si quieres conocer más sobre Olehidráulica, te ofrecemos una
                     Introducción <b>GRATIS</b>.</p>
@@ -43,8 +43,8 @@
                         <!--<label class="visually-hidden" for="email">email</label> Label asociado al input pero al habilitarlo quita el borde redondeado de la izquierda-->
                         <input type="email" name="email" class="email-info form-control" placeholder="Introduce tu correo electronico" aria-describedby="box-send">
                         <span class="input-group-text" id="box-send">
-                         <input class="send-email" type="submit" value="Solicitar Curso">
-                     </span>
+                            <input class="send-email" type="submit" value="Solicitar Curso">
+                        </span>
                     </div>
                 </form>
             </div>
@@ -65,33 +65,35 @@
             </form>
     </div>-->
 </header>
-<section class="hidro-cards d-flex justify-content-center position-absolute w-100">
-    <div class="card">
-        <img src="css\img\instructor-capacitado-card.svg" alt="instructor-img">
-        <div class="card-body">
-            <h5 class="card-title">Instructor capacitado</h5>
-            <p class="card-text">Instruido por un experto con mas de 25 años de experiencia en el área.</p>
+<section class="hidro-cards position-absolute w-100">
+    <div class="container d-flex justify-content-center">
+        <div class="card">
+            <img src="css\img\instructor-capacitado-card.svg" alt="instructor-img">
+            <div class="card-body">
+                <h5 class="card-title">Instructor capacitado</h5>
+                <p class="card-text">Instruido por un experto con mas de 25 años de experiencia en el área.</p>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <img src="css\img\certificacion-card.svg" alt="certificacion-img">
-        <div class="card-body">
-            <h5 class="card-title">Certificación</h5>
-            <p class="card-text">Certificado de finalización avalado por SAON y SICONARA.</p>
+        <div class="card">
+            <img src="css\img\certificacion-card.svg" alt="certificacion-img">
+            <div class="card-body">
+                <h5 class="card-title">Certificación</h5>
+                <p class="card-text">Certificado de finalización avalado por SAON y SICONARA.</p>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <img src="css\img\modalidad-online-card.svg" alt="instructor-img">
-        <div class="card-body">
-            <h5 class="card-title">Modalidad online</h5>
-            <p class="card-text">Clases en vivo via Zoom y grabacion de las mismas.</p>
+        <div class="card">
+            <img src="css\img\modalidad-online-card.svg" alt="instructor-img">
+            <div class="card-body">
+                <h5 class="card-title">Modalidad online</h5>
+                <p class="card-text">Clases en vivo via Zoom y grabacion de las mismas.</p>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <img src="css\img\material-didactico-card.svg" alt="instructor-img">
-        <div class="card-body">
-            <h5 class="card-title">Material didáctico</h5>
-            <p class="card-text">Multiples ejercicios y prácticas. También se podran descargar.</p>
+        <div class="card">
+            <img src="css\img\material-didactico-card.svg" alt="instructor-img">
+            <div class="card-body">
+                <h5 class="card-title">Material didáctico</h5>
+                <p class="card-text">Multiples ejercicios y prácticas. También se podran descargar.</p>
+            </div>
         </div>
     </div>
 </section>
