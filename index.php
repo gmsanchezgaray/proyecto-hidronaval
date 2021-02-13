@@ -50,8 +50,8 @@
             </div>
         </div>
     </div>
-
 </header>
+<!-----------------------------CARDS COLLECTION----------------------------->
 <section class="hidro-cards position-absolute w-100">
     <div class="container d-flex justify-content-center">
         <div class="card">
@@ -85,13 +85,42 @@
     </div>
 </section>
 <main>
+
+<!-----------------------------NOSOTROS----------------------------->
     <div class="container">
+
         <?php
         include_once './sections/index-sections/nosotros.php';
         ?>
 
     </div>
-</main>
+<!-----------------------------TABS CONTENIDOS----------------------------->
+    <?php
+    include_once './sections/index-sections/tab-information.php';
+    ?>
 
+<!-----------------------------INSTRUCTOR----------------------------->
+    <?php
+    include_once './sections/index-sections/instructor.php';
+    ?>
+
+<!-----------------------------PRICING----------------------------->
+    <?php
+    include_once './sections/index-sections/princing.php';
+    ?>
+
+<!-----------------------------TESTIMONIOS----------------------------->
+    <?php
+    include_once './sections/index-sections/testimonios.php';
+    ?>
+
+<!-----------------------------CONTACTO----------------------------->
+
+    <?php
+    include_once './sections/index-sections/contacto.php';
+    ?>
+
+</main>
+<!-----------------------------FOOTER----------------------------->
 <?php
 require "shared/footer.php";
