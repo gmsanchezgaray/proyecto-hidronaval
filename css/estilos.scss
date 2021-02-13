@@ -8,7 +8,7 @@ $titulos: #393739;
 $info: #555D62;
 $decoradores: #1E5799;
 $radius: 8px;
-$espaciado: 0.5rem 5.5rem;
+
 
 *,*::after,*::before {
   box-sizing: border-box;
@@ -40,7 +40,7 @@ html, body{
     height: 5px;
     transform: skew(-40deg);
     background: #5A7CA4;
-    width: 10%;
+    width: 5rem;
   }
   img {
     width: 400px;

@@ -3,8 +3,8 @@
 ?>
 
 <header class="header-container position-relative">
-    <nav class="main-nav navbar navbar-expand-md navbar-dark"><!--Agregado propiedad navbar-dark para que se pueda ver el toggle, sino queda transparente por defecto-->
-        <div class="container"><!--Agregado contenedor para respetar el contenido centrado-->
+    <nav class="main-nav navbar navbar-expand-md navbar-dark">
+        <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="css/img/img-logo-light.svg" height="60px" alt="img-logo-hidronaval">
             </a>
@@ -50,20 +50,7 @@
             </div>
         </div>
     </div>
-    <!--INFO ORIGINAL NICO
-    <div class="info-header col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center">
-        <h1 class="mb-4">Cursos de Oleohidraulica Naval</h1>
-        <p class="mb-4">Hemos diseñado cursos de Oleohidráulica. Si quieres conocer más sobre Olehidráulica, te ofrecemos una
-            Introducción <b>GRATIS</b>.</p>
-            <form>
-                <div class="input-group mb-3">
-                    <input type="email" name="email" class="email-info form-control" placeholder="Introduce tu correo electronico" aria-describedby="box-send">
-                    <span class="input-group-text" id="box-send">
-                        <input class="send-email" type="submit" value="Solicitar Curso">
-                    </span>
-                </div>
-            </form>
-    </div>-->
+
 </header>
 <section class="hidro-cards position-absolute w-100">
     <div class="container d-flex justify-content-center">
@@ -99,34 +86,10 @@
 </section>
 <main>
     <div class="container">
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <div class="d-flex flex-column justify-content-evenly h-100">
-                    <span class="data-instituto-decorator mb-3">NOSOTROS</span>
-                    <h1 class="mb-4">Hidronaval es una institucion de <span class="text-muted">capacitacion.</span></h1>
-                    <h4 class="mb-4">Técnicos que capacitan a mas técnicos</h4>
-                    <p class="text-muted mb-4">Hidronaval  te ofrece una formación de calidad vía e-learning. Los programas de perfeccionamiento profesional están en crecimiento, debido al respaldo a los trabajadores para que aumenten su capacitación y se adapten a los nuevos requerimientos productivos. </p>
-                    <a href="#" class="btn">Ver cursos</a>
-                </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img src="css\img\img-estudios.png" alt="img-estudios">
-            </div>
-        </div>
-        <!--<section class="nosotros d-flex justify-content-evenly">
-            <div class="img-info-instituto col-md-5">
-                <img src="css\img\img-estudios.png" alt="img-estudios">
-            </div>
-            <div class="info-instituto col-md-6">
-                <div class="info-container position-relative">
-                    <span class="data-instituto-decorator mb-3">NOSOTROS</span>
-                    <h3 class="mb-4">Hidronaval es una institucion de capacitacion.</h3>
-                    <h4 class="mb-4">Técnicos que capacitan a mas técnicos</h4>
-                    <p class="mb-4">Hidronaval  te ofrece una formación de calidad vía e-learning. Los programas de perfeccionamiento profesional están en crecimiento, debido al respaldo a los trabajadores para que aumenten su capacitación y se adapten a los nuevos requerimientos productivos. </p>
-                    <a href="#" class="btn">Ver cursos</a>
-                </div>
-            </div>
-        </section>-->
+        <?php
+        include_once './sections/index-sections/nosotros.php';
+        ?>
+
     </div>
 </main>
 
