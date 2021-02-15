@@ -213,15 +213,23 @@ main {
           margin: 8px;
           padding: 1em;
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-          transition: all .3s ease-out;
+          transition: all .5s ease;
           letter-spacing: 1px;
+          color: $color-primary;
+          svg > path {
+            transition: all .3s;
+            fill: $color-primary;
+          }
         }
         button:hover {
-          transform: translateY(-3px);
-          background-color: $color-off;
+          transform: translateY(-5px);
+          background: linear-gradient(140deg , $color-primary, $color-primary-hover);
           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-          color: $color-primary;
+          color: #fff;
           font-weight: bold;
+          svg > path {
+            fill: #fff;
+          }
         }
       }
     }

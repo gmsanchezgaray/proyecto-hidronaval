@@ -176,15 +176,23 @@ main .skills .skills-buttons .row button {
   margin: 8px;
   padding: 1em;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease;
   letter-spacing: 1px;
+  color: #F98131;
+}
+main .skills .skills-buttons .row button svg > path {
+  transition: all 0.3s;
+  fill: #F98131;
 }
 main .skills .skills-buttons .row button:hover {
-  transform: translateY(-3px);
-  background-color: #ccc;
+  transform: translateY(-5px);
+  background: linear-gradient(140deg, #F98131, #ff6803);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  color: #F98131;
+  color: #fff;
   font-weight: bold;
+}
+main .skills .skills-buttons .row button:hover svg > path {
+  fill: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
