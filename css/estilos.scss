@@ -4,13 +4,14 @@ $font-family-base: 'Roboto Condensed', sans-serif;;
 $color-primary: #F98131;
 $color-primary-hover: #ff6803;
 $color-off: #ccc;
-$titulos: #393739;
+$titles: #393739;
 $info: #555D62;
 $radius: 8px;
 
-/*********MODULOS***********/
+/*********REDEFINE: CLASES PROPIAS***********/
 
-%decoradores {
+.decorators {
+    text-transform: uppercase;
     display: inline-block;
     color: #1E5799;
     font-weight: 600;
@@ -18,7 +19,7 @@ $radius: 8px;
     opacity: 60%;
 }
 
-%linea_decoradores {
+.decorators::after {
     content: "";
     display: block;
     height: 5px;
@@ -27,7 +28,7 @@ $radius: 8px;
     width: 5rem;
 }
 
-%botones {
+.hidro-buttons {
     font-size: 21px;
     border-radius: 30px;
     background-color: $color-primary;
@@ -35,6 +36,13 @@ $radius: 8px;
     width: 10rem;
     transition: all 0.3s;
 }
+
+.hidro-buttons:hover {
+    background-color: $color-primary-hover;
+    color: #fff !important;
+}
+
+/********* ESTILOS GENERALES *********/
 
 *,*::after,*::before {
   box-sizing: border-box;
@@ -135,7 +143,7 @@ body {
     }
     .card-body {
       h5 {
-        color: $titulos;
+        color: $titles;
       }
       p {
         color: $info;
@@ -147,9 +155,8 @@ body {
 main {
   padding: 0.5rem 5.5rem;
   .featurette {
-    color: $titulos;
+    color: $titles;
     justify-content: space-around;
-
     .img-nos-container {
       width: max-content;
       img {
@@ -157,12 +164,6 @@ main {
       }
     }
     .info-nos {
-      .data-instituto-decorator {
-        @extend %decoradores;
-      }
-      .data-instituto-decorator::after {
-        @extend %linea_decoradores;
-      }
       h1 {
         font-size: 34px;
       }
@@ -172,25 +173,12 @@ main {
       p {
         font-size: 16px;
       }
-      a{
-          @extend %botones;
-      }
-      a:hover {
-        background-color: $color-primary-hover;
-      }
     }
   }
   .skills {
     .skills-info {
-      .data-skills-decorator {
-        @extend %decoradores;
-        text-transform: uppercase;
-      }
-      .data-skills-decorator::after {
-        @extend %linea_decoradores;
-      }
       h3 {
-        color: $titulos;
+        color: $titles;
         span {
           color: $info;
         }
@@ -198,12 +186,6 @@ main {
       p {
         color: $info;
         font-size: 16px;
-      }
-      a {
-        @extend %botones;
-      }
-      a:hover {
-        background-color: $color-primary-hover;
       }
     }
     .skills-buttons {

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-/*********MODULOS***********/
-main .skills .skills-info .data-skills-decorator, main .featurette .info-nos .data-instituto-decorator {
+/*********REDEFINE: CLASES PROPIAS***********/
+.decorators {
+  text-transform: uppercase;
   display: inline-block;
   color: #1E5799;
   font-weight: 600;
@@ -8,7 +9,7 @@ main .skills .skills-info .data-skills-decorator, main .featurette .info-nos .da
   opacity: 60%;
 }
 
-main .skills .skills-info .data-skills-decorator::after, main .featurette .info-nos .data-instituto-decorator::after {
+.decorators::after {
   content: "";
   display: block;
   height: 5px;
@@ -17,7 +18,7 @@ main .skills .skills-info .data-skills-decorator::after, main .featurette .info-
   width: 5rem;
 }
 
-main .skills .skills-info a, main .featurette .info-nos a {
+.hidro-buttons {
   font-size: 21px;
   border-radius: 30px;
   background-color: #F98131;
@@ -26,6 +27,12 @@ main .skills .skills-info a, main .featurette .info-nos a {
   transition: all 0.3s;
 }
 
+.hidro-buttons:hover {
+  background-color: #ff6803;
+  color: #fff !important;
+}
+
+/********* ESTILOS GENERALES *********/
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -152,12 +159,6 @@ main .featurette .info-nos h4 {
 main .featurette .info-nos p {
   font-size: 16px;
 }
-main .featurette .info-nos a:hover {
-  background-color: #ff6803;
-}
-main .skills .skills-info .data-skills-decorator {
-  text-transform: uppercase;
-}
 main .skills .skills-info h3 {
   color: #393739;
 }
@@ -167,9 +168,6 @@ main .skills .skills-info h3 span {
 main .skills .skills-info p {
   color: #555D62;
   font-size: 16px;
-}
-main .skills .skills-info a:hover {
-  background-color: #ff6803;
 }
 main .skills .skills-buttons .row button {
   width: 45%;
