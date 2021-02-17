@@ -37,6 +37,10 @@ html, body {
   margin: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 .h-80 {
   height: calc( 80% - 86px );
   /*Se resta 86px del alto del nav para ocupar el total del alto restante
@@ -130,9 +134,6 @@ body {
   color: #555D62;
 }
 
-main {
-  padding: 0.5rem 5.5rem;
-}
 main .featurette {
   color: #393739;
   justify-content: space-around;
@@ -175,7 +176,7 @@ main .skills .skills-buttons .row button {
   width: 45%;
   margin: 8px;
   padding: 1em;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
   letter-spacing: 1px;
   color: #F98131;
@@ -187,12 +188,63 @@ main .skills .skills-buttons .row button svg > path {
 main .skills .skills-buttons .row button:hover {
   transform: translateY(-5px);
   background: linear-gradient(140deg, #F98131, #ff6803);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: bold;
 }
 main .skills .skills-buttons .row button:hover svg > path {
   fill: #fff;
+}
+main .contact-section {
+  border-radius: 8px;
+  color: #393739;
+}
+main .contact-section .write-us {
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+main .contact-section .write-us h5 {
+  color: #1E5799;
+}
+main .contact-section .write-us input[type=text], main .contact-section .write-us input[type=email], main .contact-section .write-us textarea {
+  color: #FE6600;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+main .contact-section .write-us .input-effect {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+main .contact-section .write-us .input-effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FE6600;
+  transition: 0.4s;
+}
+main .contact-section .write-us .input-effect:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+main .contact-section .write-us label {
+  color: #555D62;
+}
+main .contact-section .info-contact {
+  background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+main .contact-section .info-contact h5 {
+  color: white;
+}
+main .contact-section .info-contact p {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
