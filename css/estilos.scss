@@ -10,6 +10,8 @@ $radius: 8px;
 
 /*********REDEFINE: CLASES PROPIAS***********/
 
+
+//? Little subtitle light blue
 .decorators {
     text-transform: uppercase;
     display: inline-block;
@@ -17,6 +19,7 @@ $radius: 8px;
     font-weight: 600;
     padding-bottom: 8px;
     opacity: 60%;
+    letter-spacing: 1px;
 }
 
 .decorators::after {
@@ -28,6 +31,8 @@ $radius: 8px;
     width: 5rem;
 }
 
+
+//? Action buttons
 .hidro-buttons {
     font-size: 21px;
     border-radius: 30px;
@@ -67,7 +72,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: #f0f0f0;
 }
-
+// ──────────HEADER SECTION───────────────────────────────────────────────────────────
 .header-container {
   height: 100% !important;
   background: -webkit-linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
@@ -129,6 +134,7 @@ body {
   }
 }
 
+// ──────────CARDS COLLECTION HEADER───────────────────────────────────────────────────────────
 .hidro-cards {
   bottom: 5%;
   .card {
@@ -163,6 +169,8 @@ main {
         width: 400px;
       }
     }
+
+// ──────────ABOUT US SECTION───────────────────────────────────────────────────────────
     .info-nos {
       h1 {
         font-size: 34px;
@@ -175,6 +183,8 @@ main {
       }
     }
   }
+
+// ──────────TABS CARD SECTION───────────────────────────────────────────────────────────
   .skills {
     .skills-info {
       h3 {
@@ -216,5 +226,41 @@ main {
       }
     }
   }
+
+// ──────────INSTRUCTOR SECTION───────────────────────────────────────────────────────────
+
+
+// ──────────PRICING SECTION───────────────────────────────────────────────────────────
+  .hidro-cards {
+    bottom: 5%;
+    .card {
+      width: 15rem !important;
+      padding: 8px;
+      margin: 8px;
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      img {
+        width: 100%;
+        height: 60px;
+      }
+      .card-body {
+        h5 {
+          color: $titles;
+        }
+        p {
+          color: $info;
+        }
+      }
+    }
+  }
+
+// ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
+
+
+// ──────────CONTACT SECTION───────────────────────────────────────────────────────────
+
 }
+
+
+// ──────────FOOTER SECTION───────────────────────────────────────────────────────────
 

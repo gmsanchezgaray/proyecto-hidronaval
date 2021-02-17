@@ -1,7 +1,7 @@
 <div class="container my-5">
     <div class="row text-center justify-content-center">
         <div class="pricing-container col-sm-5 text-success">
-            <p class="caption-top border-bottom border-4 text-uppercase">Cursos</p>
+            <span class="decorators">Cursos</span>
             <h5>Tenemos diferentes opciones según tus conocimientos</h5>
         </div>
     </div>

@@ -7,6 +7,7 @@
   font-weight: 600;
   padding-bottom: 8px;
   opacity: 60%;
+  letter-spacing: 1px;
 }
 
 .decorators::after {
@@ -191,6 +192,26 @@ main .skills .skills-buttons .row button:hover {
 }
 main .skills .skills-buttons .row button:hover svg > path {
   fill: #fff;
+}
+main .hidro-cards {
+  bottom: 5%;
+}
+main .hidro-cards .card {
+  width: 15rem !important;
+  padding: 8px;
+  margin: 8px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+main .hidro-cards .card img {
+  width: 100%;
+  height: 60px;
+}
+main .hidro-cards .card .card-body h5 {
+  color: #393739;
+}
+main .hidro-cards .card .card-body p {
+  color: #555D62;
 }
 
 /*# sourceMappingURL=styles.css.map */
