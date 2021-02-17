@@ -1,6 +1,6 @@
 <div class="skills row mx-auto align-content-center justify-content-between my-5">
     <div class="skills-info col-md-6">
-        <span class="data-skills-decorator">Habilidades</span>
+        <span class="decorators">Habilidades</span>
         <h3 class="mb-4">Al finalizar el Curso de Hidráulica, <br><span>estarás capacitado para:</span>
         </h3>
         
@@ -11,7 +11,7 @@
         • Manejar los actuadores más comunes de las aplicaciones hidráulicas (desarrollando tanto función como cálculo).
         </p>
 
-        <a href="#" class="btn">Ver Mas</a>
+        <a href="#" class="btn hidro-buttons">Ver Mas</a>
     </div>
     <div class="skills-buttons col-md-5 m-auto">
         <div class="row text-center">
