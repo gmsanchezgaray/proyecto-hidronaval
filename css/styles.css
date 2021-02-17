@@ -193,25 +193,36 @@ main .skills .skills-buttons .row button:hover {
 main .skills .skills-buttons .row button:hover svg > path {
   fill: #fff;
 }
-main .hidro-cards {
+main .pricing-container {
   bottom: 5%;
 }
-main .hidro-cards .card {
-  width: 15rem !important;
-  padding: 8px;
-  margin: 8px;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-main .hidro-cards .card img {
-  width: 100%;
-  height: 60px;
-}
-main .hidro-cards .card .card-body h5 {
+main .pricing-container h5 {
   color: #393739;
 }
-main .hidro-cards .card .card-body p {
-  color: #555D62;
+main .pricing-container .pricing-card .pricing-card-header {
+  background: linear-gradient(90deg, #658CBA 0%, #1E5799 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+main .pricing-container .pricing-card .recommended {
+  color: #fff;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  clip-path: polygon(0 0, 100% 0, 100% 10%, 0 100%);
+}
+main .pricing-container .pricing-card .recommended span {
+  display: block;
+  padding: 2.5vmin 3vmin 8vmin;
+}
+main .pricing-container .pricing-card svg {
+  margin-right: 0.5rem;
+}
+main .pricing-container .pricing-card .pricing-card-titles {
+  padding-bottom: 4vmin;
+}
+main .pricing-container .pricing-card .pricing-card-titles h4 {
+  color: #fff;
+}
+main .pricing-container .pricing-card .pricing-card-titles p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*# sourceMappingURL=styles.css.map */

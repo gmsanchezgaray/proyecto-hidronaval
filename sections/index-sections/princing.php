@@ -1,6 +1,6 @@
-<div class="container my-5">
+<div class="pricing-container container my-5">
     <div class="row text-center justify-content-center">
-        <div class="pricing-container col-sm-5 text-success">
+        <div class="col-sm-5">
             <span class="decorators">Cursos</span>
             <h5>Tenemos diferentes opciones según tus conocimientos</h5>
         </div>
@@ -8,12 +8,8 @@
 
     <div class="container row justify-content-center my-4">
         <!--? First Card-->
-        <div class="card p-0 text-dark bg-light mb-3 mx-4" style="max-width: 18rem;">
-            <div class="card-header bg-primary text-uppercase small">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                </svg>recomendado
-            </div>
+        <div class="card p-0 text-dark mb-3 mx-4" style="max-width: 18rem;">
+        
             <div class="card-body p-0">
                 <h5 class="card-title text-center">Curso Introductorio</h5>
                 <p class="card-text small text-muted text-center">Sin conocimientos previos</p>
@@ -84,16 +80,22 @@
             </div>
         </div>
 
-        <!--? Second Card-->
-        <div class="card p-0 text-dark bg-light mb-3 mx-4" style="max-width: 18rem;">
-            <div class="card-header bg-primary text-uppercase small">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                </svg>recomendado
+        <!--//? Second Card-->
+        <!--//TODO El style(tamaño de las cards en general)-   -->
+        <div class="card pricing-card p-0 text-dark mb-3 mx-4" style="max-width: 18rem;">
+            <div class="pricing-card-header">
+                <div class="recommended text-uppercase small">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>recomendado
+                    </span>
+                </div>
+                <div class="pricing-card-titles">
+                    <h4 class="card-title text-center">Curso Introductorio</h4>
+                    <p class="card-text small text-center">Sin conocimientos previos</p>
+                </div>
             </div>
-            <div class="card-body p-0">
-                <h5 class="card-title text-center">Curso Introductorio</h5>
-                <p class="card-text small text-muted text-center">Sin conocimientos previos</p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-question-diamond " viewBox="0 0 16 16">

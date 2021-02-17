@@ -3,6 +3,7 @@
 $font-family-base: 'Roboto Condensed', sans-serif;;
 $color-primary: #F98131;
 $color-primary-hover: #ff6803;
+$light-blue-horizontal: linear-gradient(90deg, #658CBA 0%, #1E5799 100%);
 $color-off: #ccc;
 $titles: #393739;
 $info: #555D62;
@@ -231,28 +232,48 @@ main {
 
 
 // ──────────PRICING SECTION───────────────────────────────────────────────────────────
-  .hidro-cards {
+  .pricing-container {
     bottom: 5%;
-    .card {
-      width: 15rem !important;
-      padding: 8px;
-      margin: 8px;
-      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      img {
-        width: 100%;
-        height: 60px;
+
+    h5 {
+      color: $titles;
+    }
+    .pricing-card{
+      //TODO hacer el tamaño responsive de las cards AQUI
+
+      .pricing-card-header{
+        background: $light-blue-horizontal;
+        clip-path: polygon(0 0,100% 0,100% 60%, 0 100%);
+        
       }
-      .card-body {
-        h5 {
-          color: $titles;
+      .recommended{
+        color: #fff;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));;
+        clip-path: polygon(0 0,100% 0,100% 10%, 0 100%);
+
+        span{
+          display: block;
+          padding: 2.5vmin 3vmin 8vmin;
         }
-        p {
-          color: $info;
+      }
+      svg{
+        margin-right: .5rem;
+      }
+      .pricing-card-titles{
+        padding-bottom: 4vmin;
+
+        h4{
+          color: #fff;
+        }
+        p{
+          color: rgba(255,255,255,.6);
         }
       }
     }
-  }
+  }    
+  
+    
+  
 
 // ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
 
