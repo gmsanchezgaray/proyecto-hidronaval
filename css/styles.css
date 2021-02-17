@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
 /*********REDEFINE: CLASES PROPIAS***********/
 .decorators {
   text-transform: uppercase;
@@ -7,6 +7,7 @@
   font-weight: 600;
   padding-bottom: 8px;
   opacity: 60%;
+  letter-spacing: 1px;
 }
 
 .decorators::after {
@@ -19,15 +20,21 @@
 }
 
 .hidro-buttons {
-  font-size: 21px;
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
   border-radius: 30px;
   background-color: #F98131;
   color: #fff;
+  padding: 10px 0;
   width: 10rem;
   transition: all 0.3s;
 }
 
 .hidro-buttons:hover {
+  background: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);
   background-color: #ff6803;
   color: #fff !important;
 }
@@ -191,6 +198,88 @@ main .skills .skills-buttons .row button:hover {
 }
 main .skills .skills-buttons .row button:hover svg > path {
   fill: #fff;
+}
+main .pricing-container h5 {
+  color: #393739;
+}
+main .pricing-container .pricing-card, main .pricing-container .pricing-card--recommended {
+  max-width: 18.75rem !important;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.12);
+}
+main .pricing-container .pricing-card--recommended {
+  box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.4) !important;
+}
+main .pricing-container .pricing-card--recommended .pricing-card-header {
+  opacity: 1 !important;
+}
+main .pricing-container .pricing-card--recommended .recommended {
+  color: #fff;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  clip-path: polygon(0 0, 100% 0, 100% 10%, 0 90%);
+}
+main .pricing-container .pricing-card--recommended .recommended span {
+  display: block;
+  padding: 2.5vmin 3vmin 6vmin;
+}
+main .pricing-container .pricing-card--recommended svg {
+  margin-right: 0.5rem;
+}
+main .pricing-container .pricing-card--recommended .pricing-card-titles {
+  transform: translateY(-15%) !important;
+  padding: 0 0 9vmin 0 !important;
+}
+main .pricing-container .pricing-card--recommended .pricing-card-titles h4 {
+  color: #fff;
+}
+main .pricing-container .pricing-card--recommended .pricing-card-titles p {
+  color: rgba(255, 255, 255, 0.6);
+}
+main .pricing-container .pricing-card .pricing-card-header, main .pricing-container .pricing-card--recommended .pricing-card-header {
+  background: linear-gradient(90deg, #658CBA 0%, #1E5799 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
+  border-radius: 8px 8px 0 0;
+  opacity: 0.7;
+}
+main .pricing-container .pricing-card .pricing-card-titles, main .pricing-container .pricing-card--recommended .pricing-card-titles {
+  transform: translateY(-10%);
+  padding: 12.5vmin 0 9vmin 0;
+}
+main .pricing-container .pricing-card .pricing-card-titles h4, main .pricing-container .pricing-card--recommended .pricing-card-titles h4 {
+  color: #fff;
+}
+main .pricing-container .pricing-card .pricing-card-titles p, main .pricing-container .pricing-card--recommended .pricing-card-titles p {
+  color: rgba(255, 255, 255, 0.6);
+}
+main .pricing-container .pricing-card .list-item-card li, main .pricing-container .pricing-card--recommended .list-item-card li {
+  color: #393739;
+}
+main .pricing-container .pricing-card .list-item-card li svg, main .pricing-container .pricing-card--recommended .list-item-card li svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1.5rem 0.5rem 0.938rem;
+}
+main .pricing-container .pricing-card .detail-price, main .pricing-container .pricing-card--recommended .detail-price {
+  font-family: "Open Sans", sans-serif;
+}
+main .pricing-container .pricing-card .detail-price h1, main .pricing-container .pricing-card--recommended .detail-price h1 {
+  font-weight: 700;
+}
+main .pricing-container .pricing-card .detail-price h1 sup, main .pricing-container .pricing-card--recommended .detail-price h1 sup {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #555D62;
+}
+main .pricing-container .pricing-card .detail-price h1 span, main .pricing-container .pricing-card--recommended .detail-price h1 span {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: #555D62;
+}
+main .pricing-container .pricing-card .detail-price a, main .pricing-container .pricing-card--recommended .detail-price a {
+  text-decoration: none;
+  color: #1E5799;
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
