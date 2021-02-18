@@ -80,19 +80,45 @@ body {
   transition: all 0.5s ease;
   z-index: 5;
 }
-.lightbox-container button {
+.lightbox-container .close-lightbox {
   position: absolute;
   top: 3%;
   right: 3%;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
   background-color: #fff;
+  color: #444;
+  transition: 0.3s;
+}
+.lightbox-container .close-lightbox:hover {
+  background-color: #444;
+  color: #fff;
 }
 .lightbox-container .lightbox-data {
   width: 70%;
   height: 60%;
+  padding: 0;
+  border-radius: 8px;
   background: #444;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.lightbox-container .lightbox-data .lightbox-info {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.lightbox-container .lightbox-data .lightbox-info .work-date {
+  margin: 0;
+}
+.lightbox-container .lightbox-data .lightbox-info .work-description {
+  margin-bottom: 8px;
+}
+.lightbox-container .lightbox-data .lightbox-info hr {
+  margin: 8px 0;
 }
 
 .show {
@@ -242,9 +268,17 @@ main .teacher-section .row .data-teacher p {
 main .teacher-section .row .data-teacher h5 {
   color: #393739;
 }
-main .teacher-section .teacher-works .img-teacher {
-  width: 85%;
-  border-radius: 8px;
+main .teacher-section .teacher-works .teacher-img-container {
+  width: max-content;
+}
+main .teacher-section .teacher-works .teacher-img-container .img-teacher {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+main .teacher-section .teacher-works .teacher-items ul {
+  list-style: circle;
 }
 main .teacher-section .teacher-works .gallery {
   display: flex;

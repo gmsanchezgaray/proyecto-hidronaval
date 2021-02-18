@@ -1,8 +1,8 @@
 <div class="skills row mx-auto align-content-center justify-content-between my-5">
     <div class="skills-info col-md-6">
         <span class="decorators">Habilidades</span>
-        <h3 class="mb-4">Al finalizar el Curso de Hidráulica, <br><span>estarás capacitado para:</span>
-        </h3>
+        <h2 class="mb-4">Al finalizar el Curso de Hidráulica, <br><span>estarás capacitado para:</span>
+        </h2>
         
         <p class="mb-4">• Conocer los principios físicos que rigen las aplicaciones hidráulicas complementándolos con el conocimiento sobre fluidos
         <br>
