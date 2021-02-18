@@ -16,7 +16,6 @@
   height: 5px;
   transform: skew(-40deg);
   background: #5A7CA4;
-  width: 5rem;
 }
 
 .hidro-buttons {
@@ -61,7 +60,44 @@ html, body {
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Lo coloco en esta seccion y antes del header ya que el lightbox no tiene que ser referenciado
+  con ningun otro elemento que posea propiedades de position, de lo contrario el translateX en -100%
+  se hara a partir del primer elemento mas cercano que este posicionado o que tenga position relative,
+  y no desde el -100% del viewport que es lo que se busca, de momento esta configuracion no acarrea ningun problema por suerte xd.*/
+.lightbox-container {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
   color: #f0f0f0;
+  transition: all 0.5s ease;
+  z-index: 5;
+}
+.lightbox-container button {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background-color: #fff;
+}
+.lightbox-container .lightbox-data {
+  width: 70%;
+  height: 60%;
+  background: #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 100%;
 }
 
 .header-container {
@@ -71,6 +107,7 @@ body {
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+  color: #fff;
 }
 .header-container .main-nav {
   background-color: transparent;
@@ -198,6 +235,56 @@ main .skills .skills-buttons .row button:hover {
 }
 main .skills .skills-buttons .row button:hover svg > path {
   fill: #fff;
+}
+main .teacher-section .row .data-teacher p {
+  margin-bottom: 0;
+}
+main .teacher-section .row .data-teacher h5 {
+  color: #393739;
+}
+main .teacher-section .teacher-works .example-teacher {
+  width: 85%;
+}
+main .teacher-section .teacher-works .gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .teacher-section .teacher-works .gallery .gallery-item {
+  width: 40%;
+  height: 300px;
+  margin: 1em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .teacher-section .teacher-works .gallery .gallery-item img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+main .teacher-section .teacher-works .gallery .gallery-item p {
+  bottom: 3%;
+  left: 3%;
+  opacity: 0;
+  text-align: center;
+  color: #ccc;
+  transition: all 0.3s;
+}
+main .teacher-section .teacher-works .gallery .gallery-item:hover {
+  transform: scale(1.03, 1.03);
+  background: rgba(0, 0, 0, 0.5);
+}
+main .teacher-section .teacher-works .gallery .gallery-item:hover img {
+  filter: brightness(0.3);
+}
+main .teacher-section .teacher-works .gallery .gallery-item:hover p {
+  opacity: 100%;
 }
 main .pricing-container h5 {
   color: #393739;

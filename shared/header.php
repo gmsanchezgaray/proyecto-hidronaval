@@ -11,7 +11,6 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hidronaval Capacitaciones</title>
     <link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap_css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/styles.css"></link>
 </head>
 <body>
