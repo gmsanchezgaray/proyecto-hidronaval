@@ -56,11 +56,7 @@ html, body{
 }
 :focus{outline: none;}
 .h-80{
-  height: calc( 80% - 86px ) ;
-  /*Se resta 86px del alto del nav para ocupar el total del alto restante
-  y quede perfectamente alineado al medio
-  Nico: Reemplaza 100% a 80% para lograr que el div de contenidos (titulo, parrafo e input)
-  esten en posicion vertical acorde al mockup */
+  height: calc( 80% - 86px );
 }
 
 body {
@@ -156,37 +152,46 @@ main {
   .featurette {
     color: $titles;
     justify-content: space-around;
+
     .img-nos-container {
       width: max-content;
+
       img {
         width: 400px;
       }
     }
+
     .info-nos {
       h1 {
         font-size: 34px;
       }
+
       h4 {
         font-size: 24px;
       }
+
       p {
         font-size: 16px;
       }
     }
   }
+
   .skills {
     .skills-info {
       h3 {
         color: $titles;
+
         span {
           color: $info;
         }
       }
+
       p {
         color: $info;
         font-size: 16px;
       }
     }
+
     .skills-buttons {
       .row {
         button {
@@ -197,17 +202,20 @@ main {
           transition: all .5s ease;
           letter-spacing: 1px;
           color: $color-primary;
+
           svg > path {
             transition: all .3s;
             fill: $color-primary;
           }
         }
+
         button:hover {
           transform: translateY(-5px);
-          background: linear-gradient(140deg , $color-primary, $color-primary-hover);
+          background: linear-gradient(140deg, $color-primary, $color-primary-hover);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
           color: #fff;
           font-weight: bold;
+
           svg > path {
             fill: #fff;
           }
@@ -215,28 +223,33 @@ main {
       }
     }
   }
-  .contact-section{
+
+  .contact-section {
     border-radius: $radius;
-    color: $titulos;
+    color: $titles;
+
     .write-us {
       background-color: white;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
+
       h5 {
         color: #1E5799;
       }
 
-      input[type="text"],input[type="email"],textarea{
+      input[type="text"], input[type="email"], textarea {
         color: #FE6600;
         width: 100%;
         box-sizing: border-box;
         letter-spacing: 1px;
       }
-      .input-effect{
+
+      .input-effect {
         border: 0;
         border-bottom: 1px solid #ccc;
       }
-      .input-effect ~ .focus-border{
+
+      .input-effect ~ .focus-border {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -245,23 +258,28 @@ main {
         background-color: #FE6600;
         transition: 0.4s;
       }
-      .input-effect:focus ~ .focus-border{
+
+      .input-effect:focus ~ .focus-border {
         width: 100%;
         transition: 0.4s;
       }
+
       label {
         color: $info;
       }
     }
-    .info-contact{
+
+    .info-contact {
       background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-contact.jpg");
       background-size: cover;
       background-position: center;
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
-      h5{
+
+      h5 {
         color: white;
       }
+
       p {
         color: white;
       }

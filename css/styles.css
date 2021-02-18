@@ -50,10 +50,6 @@ html, body {
 
 .h-80 {
   height: calc( 80% - 86px );
-  /*Se resta 86px del alto del nav para ocupar el total del alto restante
-  y quede perfectamente alineado al medio
-  Nico: Reemplaza 100% a 80% para lograr que el div de contenidos (titulo, parrafo e input)
-  esten en posicion vertical acorde al mockup */
 }
 
 body {
