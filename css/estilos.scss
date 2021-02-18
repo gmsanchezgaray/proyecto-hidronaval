@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
-$font-family-base: 'Roboto Condensed', sans-serif;;
+$font-family-base: 'Roboto Condensed', sans-serif;
+$font-family-secondary: 'Open Sans', sans-serif;
 $color-primary: #F98131;
 $color-primary-hover: #ff6803;
+$color-primary-gradient: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);;
+$light-blue-horizontal: linear-gradient(90deg, #658CBA 0%, #1E5799 100%);
 $color-off: #ccc;
 $titles: #393739;
 $info: #555D62;
@@ -10,6 +13,8 @@ $radius: 8px;
 
 /*********REDEFINE: CLASES PROPIAS***********/
 
+
+//? Little subtitle light blue
 .decorators {
     text-transform: uppercase;
     display: inline-block;
@@ -17,6 +22,7 @@ $radius: 8px;
     font-weight: 600;
     padding-bottom: 8px;
     opacity: 60%;
+    letter-spacing: 1px;
 }
 
 .decorators::after {
@@ -28,18 +34,26 @@ $radius: 8px;
     width: 5rem;
 }
 
+
+//? Action buttons
 .hidro-buttons {
-    font-size: 21px;
+    font-size: 0.875rem;
+    font-family: $font-family-secondary;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
     border-radius: 30px;
     background-color: $color-primary;
     color: #fff;
+    padding: 10px 0;
     width: 10rem;
     transition: all 0.3s;
 }
 
 .hidro-buttons:hover {
-    background-color: $color-primary-hover;
-    color: #fff !important;
+  background: $color-primary-gradient;
+  background-color: $color-primary-hover;
+  color: #fff !important;
 }
 
 /********* ESTILOS GENERALES *********/
@@ -63,7 +77,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: #f0f0f0;
 }
-
+// ──────────HEADER SECTION───────────────────────────────────────────────────────────
 .header-container {
   height: 100% !important;
   background: -webkit-linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
@@ -125,6 +139,7 @@ body {
   }
 }
 
+// ──────────CARDS COLLECTION HEADER───────────────────────────────────────────────────────────
 .hidro-cards {
   bottom: 5%;
   .card {
@@ -161,6 +176,8 @@ main {
       }
     }
 
+
+// ──────────ABOUT US SECTION───────────────────────────────────────────────────────────
     .info-nos {
       h1 {
         font-size: 34px;
@@ -176,6 +193,8 @@ main {
     }
   }
 
+
+// ──────────TABS CARD SECTION───────────────────────────────────────────────────────────
   .skills {
     .skills-info {
       h3 {
@@ -223,66 +242,195 @@ main {
       }
     }
   }
+// ──────────INSTRUCTOR SECTION───────────────────────────────────────────────────────────
 
-  .contact-section {
-    border-radius: $radius;
-    color: $titles;
 
-    .write-us {
-      background-color: white;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
+// ──────────PRICING SECTION───────────────────────────────────────────────────────────
+  .pricing-container {
 
-      h5 {
-        color: #1E5799;
+    h5 {
+      color: $titles;
+    }
+    
+
+    
+
+    .pricing-card{
+// TODO el border shadow - los iconos - la fuente secundaria en p:nth-child(2) - boton - link
+      max-width: 18.75rem !important;
+      border: none;
+      border-radius: $radius;
+      box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.12);        
+      
+      //* Pricing Card Special
+      &--recommended{
+       box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.4)!important;
+       @extend .pricing-card;
+        .pricing-card-header{
+          @extend .pricing-card-header;
+          opacity: 1!important;
+        }
+        
+        .recommended{
+          color: #fff;
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+          clip-path: polygon(0 0,100% 0,100% 10%, 0 90%);
+  
+  
+          span{
+            display: block;
+            padding: 2.5vmin 3vmin 6vmin;
+          }
+        }
+        svg{
+          margin-right: .5rem;
+        }
+
+        .pricing-card-titles{
+          transform: translateY(-15%)!important;
+          padding:0 0 9vmin 0 !important;
+  
+          h4{
+            color: #fff;
+          }
+          p{
+            color: rgba(255,255,255,.6);
+          }
+        }
+      }
+      
+      //* The properties of the other cards
+      .pricing-card-header{
+        background: $light-blue-horizontal;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
+        border-radius: $radius $radius 0 0;
+        opacity: .7;
+
+      }
+      
+      .pricing-card-titles{
+        transform: translateY(-10%);
+        padding: 12.5vmin 0 9vmin 0;
+
+        h4{
+          color: #fff;
+        }
+        p{
+          color: rgba(255,255,255,.6);
+        }
+      }
+      //* Shared properties of cards
+
+      .list-item-card{
+        
+        li{
+          color: $titles;
+
+          svg{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 1.5rem .5rem 0.938rem;
+          }
+        }
       }
 
-      input[type="text"], input[type="email"], textarea {
-        color: #FE6600;
-        width: 100%;
-        box-sizing: border-box;
-        letter-spacing: 1px;
-      }
+      .detail-price{
+        font-family: $font-family-secondary;
+        
+        h1{
+          font-weight: 700;
+       
+          sup{
+            font-size: .7em;
+            font-weight: 400;
+            color: $info;
+          }
 
-      .input-effect {
-        border: 0;
-        border-bottom: 1px solid #ccc;
-      }
-
-      .input-effect ~ .focus-border {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: #FE6600;
-        transition: 0.4s;
-      }
-
-      .input-effect:focus ~ .focus-border {
-        width: 100%;
-        transition: 0.4s;
-      }
-
-      label {
-        color: $info;
+          span{
+            font-size: .5em;
+            font-weight: 400;
+            color: $info;
+          }
+        }
+        
+        a{
+          text-decoration: none;
+          
+          color: #1E5799;
+          font-size: 0.875rem;
+        }
       }
     }
+    
+  }    
+  
 
-    .info-contact {
-      background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-contact.jpg");
-      background-size: cover;
-      background-position: center;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
+// ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
 
-      h5 {
-        color: white;
-      }
 
-      p {
-        color: white;
-      }
+// ──────────CONTACT SECTION───────────────────────────────────────────────────────────
+.contact-section {
+  border-radius: $radius;
+  color: $titles;
+
+  .write-us {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    h5 {
+      color: #1E5799;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      color: #FE6600;
+      width: 100%;
+      box-sizing: border-box;
+      letter-spacing: 1px;
+    }
+
+    .input-effect {
+      border: 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .input-effect ~ .focus-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FE6600;
+      transition: 0.4s;
+    }
+
+    .input-effect:focus ~ .focus-border {
+      width: 100%;
+      transition: 0.4s;
+    }
+
+    label {
+      color: $info;
+    }
+  }
+
+  .info-contact {
+    background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-contact.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    h5 {
+      color: white;
+    }
+
+    p {
+      color: white;
     }
   }
 }
+}
+
+// ──────────FOOTER SECTION───────────────────────────────────────────────────────────
+
