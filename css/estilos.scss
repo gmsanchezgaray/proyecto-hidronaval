@@ -7,6 +7,7 @@ $color-primary-hover: #ff6803;
 $color-primary-gradient: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);;
 $light-blue-horizontal: linear-gradient(90deg, #658CBA 0%, #1E5799 100%);
 $color-off: #ccc;
+$color-light: #fff;
 $titles: #393739;
 $info: #555D62;
 $radius: 8px;
@@ -44,7 +45,7 @@ $radius: 8px;
     letter-spacing: 1.25px;
     border-radius: 30px;
     background-color: $color-primary;
-    color: #fff;
+    color: $color-light;
     padding: 10px 0;
     width: 10rem;
     transition: all 0.3s;
@@ -53,7 +54,7 @@ $radius: 8px;
 .hidro-buttons:hover {
   background: $color-primary-gradient;
   background-color: $color-primary-hover;
-  color: #fff !important;
+  color: $color-light !important;
 }
 
 /********* ESTILOS GENERALES *********/
@@ -99,15 +100,15 @@ body {
       }
       .sesion:hover {
         background-color: $color-primary-hover;
-        color: #fff;
+        color: $color-light;
       }
       .nav-link {
-        color: #ccc;
+        color: $color-off;
         transition: all 0.3s;
       }
       .nav-link:hover {
         transform: scale(1.1, 1.1);
-        color: #FFF;
+        color: $color-light;
       }
     }
   }
@@ -232,11 +233,11 @@ main {
           transform: translateY(-5px);
           background: linear-gradient(140deg, $color-primary, $color-primary-hover);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-          color: #fff;
+          color: $color-light;
           font-weight: bold;
 
           svg > path {
-            fill: #fff;
+            fill: $color-light;
           }
         }
       }
@@ -272,7 +273,7 @@ main {
         }
         
         .recommended{
-          color: #fff;
+          color: $color-light;
           background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
           clip-path: polygon(0 0,100% 0,100% 10%, 0 90%);
   
@@ -291,7 +292,7 @@ main {
           padding:0 0 9vmin 0 !important;
   
           h4{
-            color: #fff;
+            color: $color-light;
           }
           p{
             color: rgba(255,255,255,.6);
@@ -313,7 +314,7 @@ main {
         padding: 12.5vmin 0 9vmin 0;
 
         h4{
-          color: #fff;
+          color: $color-light;
         }
         p{
           color: rgba(255,255,255,.6);
@@ -372,9 +373,9 @@ main {
 .contact-section {
   border-radius: $radius;
   color: $titles;
- box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, .4);
   .write-us {
-    background-color: white;
+    background-color: $color-light;
     border-top-left-radius: $radius;
     border-bottom-left-radius: $radius;
 
@@ -391,7 +392,7 @@ main {
 
     .input-effect {
       border: 0;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $color-off;
     }
 
     .input-effect ~ .focus-border {
@@ -422,11 +423,11 @@ main {
     border-bottom-right-radius: $radius;
 
     h5 {
-      color: white;
+      color: $color-light;
     }
 
     p {
-      color: white;
+      color: $color-light;
     }
   }
 }

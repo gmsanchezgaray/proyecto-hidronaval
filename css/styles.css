@@ -96,7 +96,7 @@ body {
 }
 .header-container .main-nav .collapse .navbar-nav .nav-item .nav-link:hover {
   transform: scale(1.1, 1.1);
-  color: #FFF;
+  color: #fff;
 }
 .header-container form div .email-info {
   border: none;
@@ -281,10 +281,10 @@ main .pricing-container .pricing-card .detail-price a, main .pricing-container .
 main .contact-section {
   border-radius: 8px;
   color: #393739;
-  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
 }
 main .contact-section .write-us {
-  background-color: white;
+  background-color: #fff;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -325,10 +325,10 @@ main .contact-section .info-contact {
   border-bottom-right-radius: 8px;
 }
 main .contact-section .info-contact h5 {
-  color: white;
+  color: #fff;
 }
 main .contact-section .info-contact p {
-  color: white;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
