@@ -203,10 +203,10 @@ main .pricing-container .pricing-card, main .pricing-container .pricing-card--re
   max-width: 18.75rem !important;
   border: none;
   border-radius: 8px;
-  box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.12);
+  box-shadow: 0 4px 14px rgba(119, 129, 139, 0.12);
 }
 main .pricing-container .pricing-card--recommended {
-  box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(119, 129, 139, 0.4) !important;
 }
 main .pricing-container .pricing-card--recommended .pricing-card-header {
   opacity: 1 !important;
@@ -309,6 +309,10 @@ main .contact-section .write-us .input-effect ~ .focus-border {
   height: 2px;
   background-color: #ff6803;
   transition: 0.4s;
+}
+main .contact-section .write-us textarea#text-content {
+  resize: none;
+  transform: translateY(2px);
 }
 main .contact-section .write-us .input-effect:focus ~ .focus-border {
   width: 100%;

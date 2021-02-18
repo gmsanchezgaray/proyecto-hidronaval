@@ -261,11 +261,11 @@ main {
       max-width: 18.75rem !important;
       border: none;
       border-radius: $radius;
-      box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.12);        
+      box-shadow: 0 4px 14px rgba(119, 129, 139, 0.12);
       
       //* Pricing Card Special
       &--recommended{
-       box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.4)!important;
+       box-shadow: 0 4px 14px rgba(119, 129, 139, 0.4)!important;
        @extend .pricing-card;
         .pricing-card-header{
           @extend .pricing-card-header;
@@ -402,12 +402,15 @@ main {
       width: 0;
       height: 2px;
       background-color: $color-primary-hover;
-      transition: 0.4s;
+      transition: .4s;
     }
-
+    textarea#text-content {
+      resize: none;
+      transform: translateY(2px);
+    }
     .input-effect:focus ~ .focus-border {
       width: 100%;
-      transition: 0.4s;
+      transition: .4s;
     }
 
     label {
