@@ -289,8 +289,9 @@ main {
       }
     }
     .teacher-works {
-      .example-teacher {
+      .img-teacher {
         width: 85%;
+        border-radius: $radius;
       }
       .gallery {
         display: flex;
@@ -301,7 +302,7 @@ main {
           width: 40%;
           height: 300px;
           margin: 1em;
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
           border-radius: $radius;
           overflow: hidden;
           cursor: pointer;
@@ -348,11 +349,11 @@ main {
       max-width: 18.75rem !important;
       border: none;
       border-radius: $radius;
-      box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.12);        
+      box-shadow: 0 4px 14px rgba(119, 129, 139, 0.12);        
       
       //* Pricing Card Special
       &--recommended{
-        box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.4)!important;
+        box-shadow: 0 4px 14px rgba(119, 129, 139, 0.4)!important;
         @extend .pricing-card;
         .pricing-card-header{
           @extend .pricing-card-header;
@@ -427,7 +428,6 @@ main {
         
         h1{
           font-weight: 700;
-       
           sup{
             font-size: .7em;
             font-weight: 400;

@@ -242,8 +242,9 @@ main .teacher-section .row .data-teacher p {
 main .teacher-section .row .data-teacher h5 {
   color: #393739;
 }
-main .teacher-section .teacher-works .example-teacher {
+main .teacher-section .teacher-works .img-teacher {
   width: 85%;
+  border-radius: 8px;
 }
 main .teacher-section .teacher-works .gallery {
   display: flex;
@@ -255,7 +256,7 @@ main .teacher-section .teacher-works .gallery .gallery-item {
   width: 40%;
   height: 300px;
   margin: 1em;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
@@ -293,10 +294,10 @@ main .pricing-container .pricing-card, main .pricing-container .pricing-card--re
   max-width: 18.75rem !important;
   border: none;
   border-radius: 8px;
-  box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.12);
+  box-shadow: 0 4px 14px rgba(119, 129, 139, 0.12);
 }
 main .pricing-container .pricing-card--recommended {
-  box-shadow: 0px 4px 14px rgba(119, 129, 139, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(119, 129, 139, 0.4) !important;
 }
 main .pricing-container .pricing-card--recommended .pricing-card-header {
   opacity: 1 !important;

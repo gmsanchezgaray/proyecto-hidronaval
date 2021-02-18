@@ -8,8 +8,8 @@
 
     <div class="teacher-works row justify-content-between mt-4">
         <div class="row justify-content-center align-items-center mb-4">
-            <div class="col-md-5">
-                <img class="example-teacher" src="https://i0.wp.com/www.grupoconstrufrio.com/contenido/uploads/2018/04/Ingeniero-1.png?ssl=1">
+            <div class="col-md-5 text-center">
+                <img class="img-teacher" src="css\img\img-instructor.jpg">
             </div>
             <div class="col-md-6 mt-5 m-md-4">
                 <h3 class="fs-2">Dario Omar Pistillo</h3>
