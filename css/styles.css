@@ -50,12 +50,12 @@ html, body {
   margin: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 .h-80 {
   height: calc( 80% - 86px );
-  /*Se resta 86px del alto del nav para ocupar el total del alto restante
-  y quede perfectamente alineado al medio
-  Nico: Reemplaza 100% a 80% para lograr que el div de contenidos (titulo, parrafo e input)
-  esten en posicion vertical acorde al mockup */
 }
 
 body {
@@ -133,7 +133,7 @@ body {
 }
 .header-container .main-nav .collapse .navbar-nav .nav-item .nav-link:hover {
   transform: scale(1.1, 1.1);
-  color: #FFF;
+  color: #fff;
 }
 .header-container form div .email-info {
   border: none;
@@ -181,9 +181,6 @@ body {
   color: #555D62;
 }
 
-main {
-  padding: 0.5rem 5.5rem;
-}
 main .featurette {
   color: #393739;
   justify-content: space-around;
@@ -194,13 +191,13 @@ main .featurette .img-nos-container {
 main .featurette .img-nos-container img {
   width: 400px;
 }
-main .featurette .info-nos h1 {
+main .info-nos h1 {
   font-size: 34px;
 }
-main .featurette .info-nos h4 {
+main .info-nos h4 {
   font-size: 24px;
 }
-main .featurette .info-nos p {
+main .info-nos p {
   font-size: 16px;
 }
 main .skills .skills-info h3 {
@@ -217,7 +214,7 @@ main .skills .skills-buttons .row button {
   width: 45%;
   margin: 8px;
   padding: 1em;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
   letter-spacing: 1px;
   color: #F98131;
@@ -229,7 +226,7 @@ main .skills .skills-buttons .row button svg > path {
 main .skills .skills-buttons .row button:hover {
   transform: translateY(-5px);
   background: linear-gradient(140deg, #F98131, #ff6803);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: bold;
 }
@@ -368,6 +365,62 @@ main .pricing-container .pricing-card .detail-price a, main .pricing-container .
   text-decoration: none;
   color: #1E5799;
   font-size: 0.875rem;
+}
+main .contact-section {
+  border-radius: 8px;
+  color: #393739;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+}
+main .contact-section .write-us {
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+main .contact-section .write-us h5 {
+  color: #1E5799;
+}
+main .contact-section .write-us input[type=text], main .contact-section .write-us input[type=email], main .contact-section .write-us textarea {
+  color: #ff6803;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+main .contact-section .write-us .input-effect {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+main .contact-section .write-us .input-effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6803;
+  transition: 0.4s;
+}
+main .contact-section .write-us textarea#text-content {
+  resize: none;
+  transform: translateY(2px);
+}
+main .contact-section .write-us .input-effect:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+main .contact-section .write-us label {
+  color: #555D62;
+}
+main .contact-section .info-contact {
+  background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+main .contact-section .info-contact h5 {
+  color: #fff;
+}
+main .contact-section .info-contact p {
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
