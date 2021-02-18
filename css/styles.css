@@ -281,6 +281,7 @@ main .pricing-container .pricing-card .detail-price a, main .pricing-container .
 main .contact-section {
   border-radius: 8px;
   color: #393739;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4);
 }
 main .contact-section .write-us {
   background-color: white;
@@ -291,7 +292,7 @@ main .contact-section .write-us h5 {
   color: #1E5799;
 }
 main .contact-section .write-us input[type=text], main .contact-section .write-us input[type=email], main .contact-section .write-us textarea {
-  color: #FE6600;
+  color: #ff6803;
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 1px;
@@ -306,7 +307,7 @@ main .contact-section .write-us .input-effect ~ .focus-border {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #FE6600;
+  background-color: #ff6803;
   transition: 0.4s;
 }
 main .contact-section .write-us .input-effect:focus ~ .focus-border {
