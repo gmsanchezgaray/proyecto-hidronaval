@@ -2,6 +2,21 @@
     require "shared/header.php";
 ?>
 
+<div class="lightbox-container">
+
+    <button type="button" class="btn-close close-lightbox" aria-label="Close"></button>
+
+    <div class="container lightbox-data">
+
+        <div class="lightbox-info">
+            <h2 class="light_title">Lorem ipsum dolor sit.</h2>
+            <p class="small">Fecha:</p>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, nam! Debitis tenetur earum magnam doloribus id.</p>
+        </div>
+    </div>
+</div>
+
 <header class="header-container position-relative">
     <nav class="main-nav navbar navbar-expand-md navbar-dark">
         <div class="container">
@@ -51,6 +66,7 @@
         </div>
     </div>
 </header>
+
 <!-----------------------------CARDS COLLECTION----------------------------->
 
 <?php
@@ -95,6 +111,7 @@
     </div>
 
 </main>
+
 <!-----------------------------FOOTER----------------------------->
 <?php
 require "shared/footer.php";
