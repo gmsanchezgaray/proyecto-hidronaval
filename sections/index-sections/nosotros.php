@@ -1,5 +1,5 @@
 
-<div class="row featurette">
+<div class="row featurette mb-6">
 
     <div class="col-md-5 img-nos-container">
         <img src="css\img\img-estudios.png" alt="img-estudios">

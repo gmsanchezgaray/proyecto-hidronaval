@@ -1,4 +1,4 @@
-<div class="container my-5">
+<div class="container mb-6">
     <div class="row text-center justify-content-center">
         <div class="pricing-container col-sm-5 text-success">
             <p class="caption-top border-bottom border-4 text-uppercase">testimonios</p>

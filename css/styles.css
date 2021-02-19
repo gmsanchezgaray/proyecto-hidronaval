@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
 /*********REDEFINE: CLASES PROPIAS***********/
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+
 .decorators {
   text-transform: uppercase;
   display: inline-block;
@@ -9,7 +13,6 @@
   opacity: 60%;
   letter-spacing: 1px;
 }
-
 .decorators::after {
   content: "";
   display: block;
@@ -31,7 +34,6 @@
   width: 10rem;
   transition: all 0.3s;
 }
-
 .hidro-buttons:hover {
   background: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);
   background-color: #ff6803;
@@ -174,6 +176,9 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+.header-container form div span:hover {
+  background-color: #ff6803;
+}
 .header-container form div span .send-email {
   border: none;
   outline: none;
@@ -181,9 +186,6 @@ body {
   background-color: inherit;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.header-container form div span:hover {
-  background-color: #ff6803;
 }
 
 .hidro-cards {
@@ -217,13 +219,13 @@ main .featurette .img-nos-container {
 main .featurette .img-nos-container img {
   width: 400px;
 }
-main .info-nos h1 {
+main .featurette .info-nos h1 {
   font-size: 34px;
 }
-main .info-nos h4 {
+main .featurette .info-nos h4 {
   font-size: 24px;
 }
-main .info-nos p {
+main .featurette .info-nos p {
   font-size: 16px;
 }
 main .skills .skills-info h3 {
@@ -432,13 +434,13 @@ main .contact-section .write-us .input-effect ~ .focus-border {
   background-color: #ff6803;
   transition: 0.4s;
 }
-main .contact-section .write-us textarea#text-content {
-  resize: none;
-  transform: translateY(2px);
-}
 main .contact-section .write-us .input-effect:focus ~ .focus-border {
   width: 100%;
   transition: 0.4s;
+}
+main .contact-section .write-us textarea#text-content {
+  resize: none;
+  transform: translateY(2px);
 }
 main .contact-section .write-us label {
   color: #555D62;
@@ -455,6 +457,50 @@ main .contact-section .info-contact h5 {
 }
 main .contact-section .info-contact p {
   color: #fff;
+}
+
+footer {
+  background-color: #4d4d4d;
+  color: #fff;
+}
+footer a {
+  position: relative;
+  display: inline-block;
+  color: #ccc;
+  overflow: hidden;
+  background: linear-gradient(to right, #F98131, #F98131 50%, #ccc 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 260ms ease;
+}
+footer a:hover {
+  background-position: 0 100%;
+}
+footer .form-control {
+  border: 1px solid #ff6803;
+  background-color: transparent !important;
+  color: #ccc;
+}
+footer .form-control::placeholder {
+  color: #ccc;
+}
+footer .form-control:focus {
+  color: #fff;
+  border-color: #F98131;
+  box-shadow: 0 0 0 0.25rem rgba(217, 75, 75, 0.25) !important;
+}
+footer button {
+  background: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);
+  border: 1px solid #ff6803;
+}
+footer .sub-footer {
+  background-color: #323232;
+}
+footer .sub-footer small {
+  color: #ccc;
 }
 
 /*# sourceMappingURL=styles.css.map */
