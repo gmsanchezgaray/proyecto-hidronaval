@@ -8,6 +8,7 @@ $color-primary-gradient: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);;
 $light-blue-horizontal: linear-gradient(90deg, #658CBA 0%, #1E5799 100%);
 $color-off: #ccc;
 $color-light: #fff;
+$color-dark: #444;
 $titles: #393739;
 $info: #555D62;
 $radius: 8px;
@@ -104,20 +105,20 @@ body {
     cursor: pointer;
     padding: 6px;
     border-radius: 50%;
-    background-color: #fff;
-    color: #444;
+    background-color: $color-light;
+    color: $color-dark;
     transition: .3s;
   }
   .close-lightbox:hover {
-    background-color: #444;
-    color: #fff;
+    background-color: $color-dark;
+    color: $color-light;
   }
   .lightbox-data {
     width: 70%;
     height: 60%;
     padding: 0;
     border-radius: $radius;
-    background: #444;
+    background: $color-dark;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -130,10 +131,10 @@ body {
         margin: 0;
       }
       .work-description {
-        margin-bottom: 8px;
+        margin-bottom: $radius;
       }
       hr {
-        margin: 8px 0;
+        margin: $radius 0;
       }
     }
   }
@@ -359,7 +360,7 @@ main {
             left: 3%;
             opacity: 0;
             text-align: center;
-            color: #ccc;
+            color: $color-off;
             transition: all .3s;
           }
         }
