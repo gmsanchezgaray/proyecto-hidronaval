@@ -14,7 +14,10 @@ $info: #555D62;
 $radius: 8px;
 
 /*********REDEFINE: CLASES PROPIAS***********/
-
+//? Spacer for sections
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
 
 //? Little subtitle light blue
 .decorators {
@@ -559,3 +562,46 @@ main {
   }
 }
 // ──────────FOOTER SECTION───────────────────────────────────────────────────────────
+footer {
+  background-color: #4d4d4d;
+  color: $color-light;
+  a {
+    position: relative;
+    display: inline-block;
+    color: $color-off;
+    overflow: hidden;
+    background: linear-gradient(to right, $color-primary, $color-primary 50%, $color-off 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 260ms ease;
+    &:hover{
+      background-position: 0 100%;
+    }
+  }
+  .form-control{
+    border: 1px solid $color-primary-hover;
+    background-color: transparent !important;
+    color: $color-off;
+    &::placeholder{
+      color: $color-off;
+    }
+    &:focus{
+      color: $color-light;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 .25rem rgba(217, 75, 75, 0.25) !important;
+    }
+  }
+  button{
+    background: $color-primary-gradient;
+    border: 1px solid $color-primary-hover;
+  }
+  .sub-footer{
+    background-color: #323232;
+    small{
+      color: $color-off
+    }
+  }
+}
