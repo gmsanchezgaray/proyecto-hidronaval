@@ -9,7 +9,6 @@
   opacity: 60%;
   letter-spacing: 1px;
 }
-
 .decorators::after {
   content: "";
   display: block;
@@ -31,7 +30,6 @@
   width: 10rem;
   transition: all 0.3s;
 }
-
 .hidro-buttons:hover {
   background: linear-gradient(315deg, #FE6600 0%, #F78C45 100%);
   background-color: #ff6803;
@@ -174,6 +172,9 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+.header-container form div span:hover {
+  background-color: #ff6803;
+}
 .header-container form div span .send-email {
   border: none;
   outline: none;
@@ -181,9 +182,6 @@ body {
   background-color: inherit;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.header-container form div span:hover {
-  background-color: #ff6803;
 }
 
 .hidro-cards {
@@ -217,13 +215,13 @@ main .featurette .img-nos-container {
 main .featurette .img-nos-container img {
   width: 400px;
 }
-main .info-nos h1 {
+main .featurette .info-nos h1 {
   font-size: 34px;
 }
-main .info-nos h4 {
+main .featurette .info-nos h4 {
   font-size: 24px;
 }
-main .info-nos p {
+main .featurette .info-nos p {
   font-size: 16px;
 }
 main .skills .skills-info h3 {
@@ -432,13 +430,13 @@ main .contact-section .write-us .input-effect ~ .focus-border {
   background-color: #ff6803;
   transition: 0.4s;
 }
-main .contact-section .write-us textarea#text-content {
-  resize: none;
-  transform: translateY(2px);
-}
 main .contact-section .write-us .input-effect:focus ~ .focus-border {
   width: 100%;
   transition: 0.4s;
+}
+main .contact-section .write-us textarea#text-content {
+  resize: none;
+  transform: translateY(2px);
 }
 main .contact-section .write-us label {
   color: #555D62;

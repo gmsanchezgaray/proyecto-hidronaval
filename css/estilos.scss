@@ -22,17 +22,16 @@ $radius: 8px;
     display: inline-block;
     color: #1E5799;
     font-weight: 600;
-    padding-bottom: 8px;
+    padding-bottom: $radius;
     opacity: 60%;
     letter-spacing: 1px;
-}
-
-.decorators::after {
-    content: "";
-    display: block;
-    height: 5px;
-    transform: skew(-40deg);
-    background: #5A7CA4;
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      transform: skew(-40deg);
+      background: #5A7CA4;
+  }
 }
 
 
@@ -49,14 +48,12 @@ $radius: 8px;
     padding: 10px 0;
     width: 10rem;
     transition: all 0.3s;
+    &:hover {
+      background: $color-primary-gradient;
+      background-color: $color-primary-hover;
+      color: $color-light !important;
+    }
 }
-
-.hidro-buttons:hover {
-  background: $color-primary-gradient;
-  background-color: $color-primary-hover;
-  color: $color-light !important;
-}
-
 /********* ESTILOS GENERALES *********/
 
 *,*::after,*::before {
@@ -108,11 +105,12 @@ body {
     background-color: $color-light;
     color: $color-dark;
     transition: .3s;
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+    }
   }
-  .close-lightbox:hover {
-    background-color: $color-dark;
-    color: $color-light;
-  }
+  
   .lightbox-data {
     width: 70%;
     height: 60%;
@@ -153,30 +151,31 @@ body {
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-  color: #fff;
+  color: $color-light;
   .main-nav {
     background-color: transparent;
     color: #f0f0f0;
     .collapse .navbar-nav .nav-item {
-      padding: 0 8px;
+      padding: 0 $radius;
       text-transform: uppercase;
       letter-spacing: 1px;
       .sesion {
         color: #f0f0f0;
         transition: all 0.3s;
         background-color: $color-primary;
+        &:hover {
+          background-color: $color-primary-hover;
+          color: $color-light;
+        }
       }
-      .sesion:hover {
-        background-color: $color-primary-hover;
-        color: $color-light;
-      }
+      
       .nav-link {
         color: $color-off;
         transition: all 0.3s;
-      }
-      .nav-link:hover {
-        transform: scale(1.1, 1.1);
-        color: $color-light;
+        &:hover {
+          transform: scale(1.1, 1.1);
+          color: $color-light;
+        }
       }
     }
   }
@@ -193,6 +192,9 @@ body {
       border: none;
       border-top-right-radius: 1rem;
       border-bottom-right-radius: 1rem;
+      &:hover {
+        background-color: $color-primary-hover;
+      }
       .send-email {
         border: none;
         outline: none;
@@ -202,9 +204,6 @@ body {
         letter-spacing: 1px;
       }
     }
-    span:hover {
-      background-color: $color-primary-hover;
-    }
   }
 }
 
@@ -213,9 +212,9 @@ body {
   bottom: 5%;
   .card {
     width: 15rem !important;
-    padding: 8px;
-    margin: 8px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    padding: $radius;
+    margin: $radius;
+    box-shadow: $radius $radius 16px rgba(0, 0, 0, 0.5);
     text-align: center;
     img {
       width: 100%;
@@ -233,6 +232,7 @@ body {
 }
 
 main {
+// ──────────ABOUT US SECTION───────────────────────────────────────────────────────────
   .featurette {
     color: $titles;
     justify-content: space-around;
@@ -244,22 +244,21 @@ main {
         width: 400px;
       }
     }
-  }
 
-// ──────────ABOUT US SECTION───────────────────────────────────────────────────────────
-  .info-nos {
-    h1 {
-      font-size: 34px;
+    .info-nos {
+      h1 {
+        font-size: 34px;
+      }
+  
+      h4 {
+        font-size: 24px;
+      }
+  
+      p {
+        font-size: 16px;
+      }
     }
-
-    h4 {
-      font-size: 24px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-  }
+  }  
 // ──────────TABS CARD SECTION───────────────────────────────────────────────────────────
   .skills {
     .skills-info {
@@ -281,7 +280,7 @@ main {
       .row {
         button {
           width: 45%;
-          margin: 8px;
+          margin: $radius;
           padding: 1em;
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
           transition: all .5s ease;
@@ -292,24 +291,22 @@ main {
             transition: all .3s;
             fill: $color-primary;
           }
-        }
-
-        button:hover {
-          transform: translateY(-5px);
-          background: linear-gradient(140deg, $color-primary, $color-primary-hover);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-          color: $color-light;
-          font-weight: bold;
-
-          svg > path {
-            fill: $color-light;
+          &:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(140deg, $color-primary, $color-primary-hover);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            color: $color-light;
+            font-weight: bold;
+  
+            svg > path {
+              fill: $color-light;
+            }
           }
         }
       }
     }
   }
 // ──────────INSTRUCTOR SECTION───────────────────────────────────────────────────────────
-
   .teacher-section {
     .row .data-teacher {
       p {
@@ -343,7 +340,7 @@ main {
           width: 40%;
           height: 300px;
           margin: 1em;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px $radius rgba(0, 0, 0, 0.5);
           border-radius: $radius;
           overflow: hidden;
           cursor: pointer;
@@ -363,21 +360,20 @@ main {
             color: $color-off;
             transition: all .3s;
           }
-        }
-        .gallery-item:hover {
-          transform: scale(1.03,1.03);
-          background: rgba(0, 0, 0, 0.5);
-          img {
-            filter: brightness(0.3);
-          }
-          p {
-            opacity: 100%;
+          &:hover {
+            transform: scale(1.03,1.03);
+            background: rgba(0, 0, 0, 0.5);
+            img {
+              filter: brightness(0.3);
+            }
+            p {
+              opacity: 100%;
+            }
           }
         }
       }
     }
   }
-
 // ──────────PRICING SECTION───────────────────────────────────────────────────────────
   .pricing-container {
 
@@ -492,7 +488,6 @@ main {
     }
     
   }    
-
 // ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
 
 
@@ -520,24 +515,25 @@ main {
       .input-effect {
         border: 0;
         border-bottom: 1px solid $color-off;
-      }
-
-      .input-effect ~ .focus-border {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: $color-primary-hover;
-        transition: .4s;
+          ~ {
+            .focus-border {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: $color-primary-hover;
+              transition: .4s;
+            }
+          }
+          &:focus ~ .focus-border {
+            width: 100%;
+            transition: .4s;
+          }
       }
       textarea#text-content {
         resize: none;
         transform: translateY(2px);
-      }
-      .input-effect:focus ~ .focus-border {
-        width: 100%;
-        transition: .4s;
       }
 
       label {
