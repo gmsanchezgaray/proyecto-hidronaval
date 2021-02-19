@@ -9,7 +9,7 @@
     <div class="teacher-works row justify-content-between mt-4">
         <div class="row justify-content-center align-items-center mb-4">
             <div class="teacher-img-container col-md-5 text-center">
-                <img class="img-teacher" src="css\img\img-instructor.jpg">
+                <img class="img-teacher" src="css\img\page-img\img-instructor.jpg">
             </div>
             <div class="teacher-items col-md-6 mt-5 m-md-4">
                 <h3 class="fs-2">Dario Omar Pistillo</h3>

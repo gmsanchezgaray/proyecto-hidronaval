@@ -2,7 +2,7 @@
 <div class="row featurette">
 
     <div class="col-md-5 img-nos-container">
-        <img src="css\img\img-estudios.png" alt="img-estudios">
+        <img src="css\img\page-img\img-estudios.png" alt="img-estudios">
     </div>
 
     <div class="col-md-6 my-auto info-nos">
