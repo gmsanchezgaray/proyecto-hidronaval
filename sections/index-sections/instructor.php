@@ -8,15 +8,18 @@
 
     <div class="teacher-works row justify-content-between mt-4">
         <div class="row justify-content-center align-items-center mb-4">
-            <div class="col-md-5 text-center">
+            <div class="teacher-img-container col-md-5 text-center">
                 <img class="img-teacher" src="css\img\img-instructor.jpg">
             </div>
-            <div class="col-md-6 mt-5 m-md-4">
+            <div class="teacher-items col-md-6 mt-5 m-md-4">
                 <h3 class="fs-2">Dario Omar Pistillo</h3>
-                <p>- Profesor durante cinco (25) años en el instituto SECONARA<br>
-                    - Experiencia técnica profesional in situ en el diseño, ejecución e inspección de proyectos hidráulicos y de saneamiento.<br>
-                    -Especialista en instalaciones eléctricas y domóticas.<br>
-                </p>
+
+                <ul>
+                    <li>Profesor durante 25 años en el instituto SECONARA</li>
+                    <li>Experiencia técnica profesional in situ en el diseño, ejecución e inspección de proyectos hidráulicos y de saneamiento.</li>
+                    <li>Especialista en instalaciones eléctricas y domóticas.</li>
+                </ul>
+                
             </div>
         </div>
 

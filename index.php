@@ -4,15 +4,14 @@
 
 <div class="lightbox-container">
 
-    <button type="button" class="btn-close close-lightbox" aria-label="Close"></button>
+<span class="material-icons close-lightbox">
+clear
+</span>
 
     <div class="container lightbox-data">
 
-        <div class="lightbox-info">
-            <h2 class="light_title">Lorem ipsum dolor sit.</h2>
-            <p class="small">Fecha:</p>
-            <hr>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, nam! Debitis tenetur earum magnam doloribus id.</p>
+        <div class="lightbox-info p-4">
+            
         </div>
     </div>
 </div>
