@@ -14,7 +14,10 @@ $info: #555D62;
 $radius: 8px;
 
 /*********REDEFINE: CLASES PROPIAS***********/
-
+//? Spacer for sections
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
 
 //? Little subtitle light blue
 .decorators {
@@ -25,14 +28,13 @@ $radius: 8px;
     padding-bottom: 8px;
     opacity: 60%;
     letter-spacing: 1px;
-}
-
-.decorators::after {
-    content: "";
-    display: block;
-    height: 5px;
-    transform: skew(-40deg);
-    background: #5A7CA4;
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      transform: skew(-40deg);
+      background: #5A7CA4;
+  }
 }
 
 
@@ -49,14 +51,12 @@ $radius: 8px;
     padding: 10px 0;
     width: 10rem;
     transition: all 0.3s;
+    &:hover {
+      background: $color-primary-gradient;
+      background-color: $color-primary-hover;
+      color: $color-light !important;
+    }
 }
-
-.hidro-buttons:hover {
-  background: $color-primary-gradient;
-  background-color: $color-primary-hover;
-  color: $color-light !important;
-}
-
 /********* ESTILOS GENERALES *********/
 
 *,*::after,*::before {
@@ -108,11 +108,12 @@ body {
     background-color: $color-light;
     color: $color-dark;
     transition: .3s;
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+    }
   }
-  .close-lightbox:hover {
-    background-color: $color-dark;
-    color: $color-light;
-  }
+  
   .lightbox-data {
     width: 70%;
     height: 60%;
@@ -131,10 +132,10 @@ body {
         margin: 0;
       }
       .work-description {
-        margin-bottom: $radius;
+        margin-bottom: 8px;
       }
       hr {
-        margin: $radius 0;
+        margin: 8px 0;
       }
     }
   }
@@ -153,7 +154,7 @@ body {
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-  color: #fff;
+  color: $color-light;
   .main-nav {
     background-color: transparent;
     color: #f0f0f0;
@@ -165,18 +166,19 @@ body {
         color: #f0f0f0;
         transition: all 0.3s;
         background-color: $color-primary;
+        &:hover {
+          background-color: $color-primary-hover;
+          color: $color-light;
+        }
       }
-      .sesion:hover {
-        background-color: $color-primary-hover;
-        color: $color-light;
-      }
+      
       .nav-link {
         color: $color-off;
         transition: all 0.3s;
-      }
-      .nav-link:hover {
-        transform: scale(1.1, 1.1);
-        color: $color-light;
+        &:hover {
+          transform: scale(1.1, 1.1);
+          color: $color-light;
+        }
       }
     }
   }
@@ -193,6 +195,9 @@ body {
       border: none;
       border-top-right-radius: 1rem;
       border-bottom-right-radius: 1rem;
+      &:hover {
+        background-color: $color-primary-hover;
+      }
       .send-email {
         border: none;
         outline: none;
@@ -201,9 +206,6 @@ body {
         text-transform: uppercase;
         letter-spacing: 1px;
       }
-    }
-    span:hover {
-      background-color: $color-primary-hover;
     }
   }
 }
@@ -233,6 +235,7 @@ body {
 }
 
 main {
+// ──────────ABOUT US SECTION───────────────────────────────────────────────────────────
   .featurette {
     color: $titles;
     justify-content: space-around;
@@ -244,22 +247,21 @@ main {
         width: 400px;
       }
     }
-  }
 
-// ──────────ABOUT US SECTION───────────────────────────────────────────────────────────
-  .info-nos {
-    h1 {
-      font-size: 34px;
+    .info-nos {
+      h1 {
+        font-size: 34px;
+      }
+  
+      h4 {
+        font-size: 24px;
+      }
+  
+      p {
+        font-size: 16px;
+      }
     }
-
-    h4 {
-      font-size: 24px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-  }
+  }  
 // ──────────TABS CARD SECTION───────────────────────────────────────────────────────────
   .skills {
     .skills-info {
@@ -292,24 +294,22 @@ main {
             transition: all .3s;
             fill: $color-primary;
           }
-        }
-
-        button:hover {
-          transform: translateY(-5px);
-          background: linear-gradient(140deg, $color-primary, $color-primary-hover);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-          color: $color-light;
-          font-weight: bold;
-
-          svg > path {
-            fill: $color-light;
+          &:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(140deg, $color-primary, $color-primary-hover);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            color: $color-light;
+            font-weight: bold;
+  
+            svg > path {
+              fill: $color-light;
+            }
           }
         }
       }
     }
   }
 // ──────────INSTRUCTOR SECTION───────────────────────────────────────────────────────────
-
   .teacher-section {
     .row .data-teacher {
       p {
@@ -363,21 +363,20 @@ main {
             color: $color-off;
             transition: all .3s;
           }
-        }
-        .gallery-item:hover {
-          transform: scale(1.03,1.03);
-          background: rgba(0, 0, 0, 0.5);
-          img {
-            filter: brightness(0.3);
-          }
-          p {
-            opacity: 100%;
+          &:hover {
+            transform: scale(1.03,1.03);
+            background: rgba(0, 0, 0, 0.5);
+            img {
+              filter: brightness(0.3);
+            }
+            p {
+              opacity: 100%;
+            }
           }
         }
       }
     }
   }
-
 // ──────────PRICING SECTION───────────────────────────────────────────────────────────
   .pricing-container {
 
@@ -492,7 +491,6 @@ main {
     }
     
   }    
-
 // ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
 
 .testimony-container {
@@ -583,24 +581,25 @@ main {
       .input-effect {
         border: 0;
         border-bottom: 1px solid $color-off;
-      }
-
-      .input-effect ~ .focus-border {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: $color-primary-hover;
-        transition: .4s;
+          ~ {
+            .focus-border {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: $color-primary-hover;
+              transition: .4s;
+            }
+          }
+          &:focus ~ .focus-border {
+            width: 100%;
+            transition: .4s;
+          }
       }
       textarea#text-content {
         resize: none;
         transform: translateY(2px);
-      }
-      .input-effect:focus ~ .focus-border {
-        width: 100%;
-        transition: .4s;
       }
 
       label {
@@ -626,3 +625,46 @@ main {
   }
 }
 // ──────────FOOTER SECTION───────────────────────────────────────────────────────────
+footer {
+  background-color: #4d4d4d;
+  color: $color-light;
+  a {
+    position: relative;
+    display: inline-block;
+    color: $color-off;
+    overflow: hidden;
+    background: linear-gradient(to right, $color-primary, $color-primary 50%, $color-off 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 260ms ease;
+    &:hover{
+      background-position: 0 100%;
+    }
+  }
+  .form-control{
+    border: 1px solid $color-primary-hover;
+    background-color: transparent !important;
+    color: $color-off;
+    &::placeholder{
+      color: $color-off;
+    }
+    &:focus{
+      color: $color-light;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 .25rem rgba(217, 75, 75, 0.25) !important;
+    }
+  }
+  button{
+    background: $color-primary-gradient;
+    border: 1px solid $color-primary-hover;
+  }
+  .sub-footer{
+    background-color: #323232;
+    small{
+      color: $color-off
+    }
+  }
+}

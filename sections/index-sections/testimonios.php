@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <div class="testimony-container container my-5">
+=======
+<div class="container mb-6">
+>>>>>>> 97af559f44aa8a5bd1da86e2f6237d7f72af8d39
     <div class="row text-center justify-content-center">
         <div class="testimony-intro col-sm-5 text-success">
             <span class="decorators">Testimonios</span>
