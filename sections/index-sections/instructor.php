@@ -33,17 +33,17 @@
             </div>
             
             <div class="gallery-item position-relative">
-                <img src="css\img\galeria-trabajos\img-prueba-1.jpg" alt="prueba-1" class="img-gallery-works">
+                <img src="css\img\galeria-trabajos\Rubimar.jpg" alt="prueba-1" class="img-gallery-works">
                 <p class="position-absolute">Click en la imagen para ver informacion</p>
             </div>
 
             <div class="gallery-item">
-                <img src="css\img\galeria-trabajos\img-prueba-2.jpg" alt="prueba-2" class="img-gallery-works">
+                <img src="css\img\galeria-trabajos\San Julian.JPG" alt="prueba-2" class="img-gallery-works">
                 <p class="position-absolute">Click en la imagen para ver informacion</p>
             </div>
 
             <div class="gallery-item">
-                <img src="css\img\galeria-trabajos\img-prueba-3.jpg" alt="prueba-3" class="img-gallery-works">
+                <img src="css\img\galeria-trabajos\San Matias.JPG" alt="prueba-3" class="img-gallery-works">
                 <p class="position-absolute">Click en la imagen para ver informacion</p>
             </div>
 
