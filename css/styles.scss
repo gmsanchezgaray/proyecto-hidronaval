@@ -127,6 +127,8 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     .lightbox-info {
+      border-bottom-left-radius: $radius;
+      border-bottom-right-radius: $radius;
       background-color: rgba(0,0,0,.6);
       .work-date {
         margin: 0;
