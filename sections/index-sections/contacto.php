@@ -1,4 +1,4 @@
-<div class="container mb-6">
+<div class="container pb-6">
     <div class="contact-section row">
         <div class="col-md-7 p-5 write-us">
             <h5 class="mb-5">Envíanos un mensaje</h5>
