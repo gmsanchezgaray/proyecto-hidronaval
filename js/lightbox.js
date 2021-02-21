@@ -17,19 +17,19 @@ document.onreadystatechange = () => {
             description: 'Este es uno de los trabajos posta, pero todavia no tengo la descripcion ni la de los demas, mi viejo iba a conseguir la data.'
         },
         {
-            title: 'Acorazado Bizmarck',
+            title: 'Rubimar',
             date: '12/10/2004',
-            description: 'Hundio media flota naval britanica en la segunda guerra mundial.'
+            description: 'Barco Rubimar'
         },
         {
-            title: 'Fragata Libertad',
+            title: 'San Julian',
             date: '06/11/2009',
-            description: 'No se si es la verdadera pero cuenta la leyenda que en la fragata libertad hacen competencias ilegales de truco entre los marineros.'
+            description: 'Barco San Julian'
         },
         {
-            title: 'Barco Petrolero',
+            title: 'San Matias',
             date: '08/04/2012',
-            description: 'Causante de una de las contaminaciones ambientales mas peligrosas de la vida maritima, ni aquaman lo perdonaria.'
+            description: 'Barco San Matias'
         },
         {
             title: 'Velero en el Caribe',

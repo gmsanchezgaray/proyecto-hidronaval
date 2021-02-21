@@ -4,9 +4,9 @@
 
 <div class="lightbox-container">
 
-<span class="material-icons close-lightbox">
-clear
-</span>
+    <span class="material-icons close-lightbox">
+    clear
+    </span>
 
     <div class="container lightbox-data">
 

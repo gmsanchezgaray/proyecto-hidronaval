@@ -149,8 +149,8 @@ body {
 // ──────────HEADER SECTION───────────────────────────────────────────────────────────
 .header-container {
   height: 100% !important;
-  background: -webkit-linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
-  background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-header.jpg");
+  background: -webkit-linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("./img/page-img/img-header.jpg");
+  background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.9) 0%, rgba(101, 140, 186, 0.6) 100%), url("./img/page-img/img-header.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
@@ -493,6 +493,69 @@ main {
   }    
 // ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
 
+.testimony-container {
+  .testimony-intro {
+    h5 {
+      color: $titles;
+    }
+  }
+  #carousel {
+    margin-bottom: 8rem !important;
+    .carousel-indicators {
+      bottom: -12%;
+      button{
+        margin: 0 1em;
+        width: 1em;
+        height: 1em;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: #FE6600;
+        opacity: .5;
+        transition: .3s;
+        &:hover,
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+    .carousel-inner {
+      height: 100%;
+      padding: 2rem;
+      .carousel-item {
+        .card {
+          width: 23rem;
+          padding: 1em;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+          img {
+            border: 5px solid #1E5799;
+            border-radius: 50%;
+            width: 50%;
+          }
+          h5 {
+            color: $titles;
+          }
+          p {
+            color: $info;
+            font-style: italic;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: max-content;
+        height: max-content;
+        border: none;
+        padding: 4px;
+        border-radius: $radius;
+        background-image: $color-primary-gradient;
+        top: 45%;
+        outline: none;
+        text-align: center;
+      } 
+    }
+  }
+}
 
 // ──────────CONTACT SECTION───────────────────────────────────────────────────────────
   .contact-section {
@@ -545,7 +608,7 @@ main {
     }
 
     .info-contact {
-      background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("img/img-contact.jpg");
+      background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("./img/page-img/img-contact.jpg");
       background-size: cover;
       background-position: center;
       border-top-right-radius: $radius;

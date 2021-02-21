@@ -9,7 +9,7 @@
     <div class="teacher-works row justify-content-between mt-4">
         <div class="row justify-content-center align-items-center mb-4">
             <div class="teacher-img-container col-md-5 text-center">
-                <img class="img-teacher" src="css\img\img-instructor.jpg">
+                <img class="img-teacher" src="css\img\page-img\img-instructor.jpg">
             </div>
             <div class="teacher-items col-md-6 mt-5 m-md-4">
                 <h3 class="fs-2">Dario Omar Pistillo</h3>
@@ -33,17 +33,17 @@
             </div>
             
             <div class="gallery-item position-relative">
-                <img src="css\img\galeria-trabajos\img-prueba-1.jpg" alt="prueba-1" class="img-gallery-works">
+                <img src="css\img\galeria-trabajos\Rubimar.jpg" alt="prueba-1" class="img-gallery-works">
                 <p class="position-absolute">Click en la imagen para ver informacion</p>
             </div>
 
             <div class="gallery-item">
-                <img src="css\img\galeria-trabajos\img-prueba-2.jpg" alt="prueba-2" class="img-gallery-works">
+                <img src="css\img\galeria-trabajos\San Julian.JPG" alt="prueba-2" class="img-gallery-works">
                 <p class="position-absolute">Click en la imagen para ver informacion</p>
             </div>
 
             <div class="gallery-item">
-                <img src="css\img\galeria-trabajos\img-prueba-3.jpg" alt="prueba-3" class="img-gallery-works">
+                <img src="css\img\galeria-trabajos\San Matias.JPG" alt="prueba-3" class="img-gallery-works">
                 <p class="position-absolute">Click en la imagen para ver informacion</p>
             </div>
 
