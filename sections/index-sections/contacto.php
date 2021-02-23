@@ -1,5 +1,5 @@
-<div class="container pb-6">
-    <div class="contact-section row">
+<div id="contacto" class="contact-section pb-6">
+    <div class="bx-shadow row overflow-hidden">
         <div class="col-md-7 p-5 write-us">
             <h5 class="mb-5">Envíanos un mensaje</h5>
             <form class="form-line">
@@ -39,7 +39,7 @@
                     <div class="col-md-12">
                         <div class="position-relative">
                             <label for="text-content" class="form-label">Mensaje</label>
-                            <textarea class="input-effect w-100" name="text-content" id="text-content" rows="3"></textarea>
+                            <textarea class=" input-effect" name="text-content" id="text-content" rows="3"></textarea>
                             <span class="focus-border"></span>
                         </div>
                     </div>

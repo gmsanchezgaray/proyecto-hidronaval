@@ -1,4 +1,4 @@
-<div class=" pricing-container mb-6">
+<div id="cursos" class="pricing-container pb-6">
     <div class="row text-center justify-content-center">
         <div class="col-sm-5">
             <span class="decorators">Cursos</span>

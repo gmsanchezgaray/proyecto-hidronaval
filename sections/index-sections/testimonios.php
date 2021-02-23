@@ -1,4 +1,4 @@
-<div class="testimony-container container mb-6">
+<div class="testimony-container container pb-6">
     <div class="row text-center justify-content-center">
         <div class="testimony-intro col-sm-5 text-success">
             <span class="decorators">Testimonios</span>
@@ -40,18 +40,18 @@
                     </div>
                 </div>
             </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
-            <span class="material-icons fs-1">
-            chevron_left
-            </span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
-        <span class="material-icons fs-1">
-        chevron_right
-        </span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+                <span class="material-icons fs-1">
+                    chevron_left
+                </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+                <span class="material-icons fs-1">
+                    chevron_right
+                </span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-</div>
 </div>

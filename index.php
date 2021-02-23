@@ -31,13 +31,16 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cursos</a>
+                        <a class="nav-link" href="#instructor">Instructor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="sesion btn rounded-3">Iniciar Sesion</a>
@@ -73,42 +76,32 @@
 ?>
 
 <main>
-
-<!-----------------------------NOSOTROS----------------------------->
     <div class="container">
-
+<!-----------------------------NOSOTROS----------------------------->
     <?php
     include_once './sections/index-sections/nosotros.php';
     ?>
-
 <!-----------------------------TABS CONTENIDOS----------------------------->
     <?php
     include_once './sections/index-sections/tab-information.php';
     ?>
-
 <!-----------------------------INSTRUCTOR----------------------------->
     <?php
     include_once './sections/index-sections/instructor.php';
     ?>
-
 <!-----------------------------PRICING----------------------------->
     <?php
     include_once './sections/index-sections/princing.php';
     ?>
-
 <!-----------------------------TESTIMONIOS----------------------------->
     <?php
     include_once './sections/index-sections/testimonios.php';
     ?>
-
 <!-----------------------------CONTACTO----------------------------->
-
     <?php
     include_once './sections/index-sections/contacto.php';
     ?>
-
     </div>
-
 </main>
 
 <!-----------------------------FOOTER----------------------------->
