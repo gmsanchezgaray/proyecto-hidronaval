@@ -1,4 +1,4 @@
-<div class="testimony-container container mb-6">
+<div class="testimony-container container pb-6">
     <div class="row text-center justify-content-center">
         <div class="testimony-intro col-sm-5 text-success">
             <span class="decorators">Testimonios</span>

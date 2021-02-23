@@ -175,8 +175,7 @@ body {
       }
       
       .nav-link {
-        color: $color-off;
-        transition: all 0.3s;
+        transition: all .3s;
         &:hover {
           transform: scale(1.1, 1.1);
           color: $color-light;
@@ -287,7 +286,7 @@ main {
           width: 45%;
           margin: 8px;
           padding: 1em;
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, .15);
           transition: all .5s ease;
           letter-spacing: 1px;
           color: $color-primary;
@@ -299,7 +298,7 @@ main {
           &:hover {
             transform: translateY(-5px);
             background: linear-gradient(140deg, $color-primary, $color-primary-hover);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, .45);
             color: $color-light;
             font-weight: bold;
   
@@ -494,87 +493,86 @@ main {
     
   }    
 // ──────────TESTIMONIALS SECTION───────────────────────────────────────────────────────────
-
-.testimony-container {
-  .testimony-intro {
-    h5 {
-      color: $titles;
-    }
-  }
-  #carousel {
-    margin-bottom: 8rem !important;
-    .carousel-indicators {
-      bottom: -12%;
-      button{
-        margin: 0 1em;
-        width: 1em;
-        height: 1em;
-        outline: none;
-        border: none;
-        border-radius: 50%;
-        background-color: #FE6600;
-        opacity: .5;
-        transition: .3s;
-        &:hover,
-        &:focus {
-          opacity: 1;
-        }
+  .testimony-container {
+    .testimony-intro {
+      h5 {
+        color: $titles;
       }
     }
-    .carousel-inner {
-      height: 100%;
-      padding: 2rem;
-      .carousel-item {
-        .card {
-          width: 23rem;
-          padding: 1em;
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-          img {
-            border: 5px solid #1E5799;
-            border-radius: 50%;
-            width: 50%;
-          }
-          h5 {
-            color: $titles;
-          }
-          p {
-            color: $info;
-            font-style: italic;
+    #carousel {
+      margin-bottom: 8rem !important;
+      .carousel-indicators {
+        bottom: -12%;
+        button{
+          margin: 0 1em;
+          width: 1em;
+          height: 1em;
+          outline: none;
+          border: none;
+          border-radius: 50%;
+          background-color: #FE6600;
+          opacity: .5;
+          transition: .3s;
+          &:hover,
+          &:focus {
+            opacity: 1;
           }
         }
       }
-      .carousel-control-prev,
-      .carousel-control-next {
-        width: max-content;
-        height: max-content;
-        border: none;
-        padding: 4px;
-        border-radius: $radius;
-        background-image: $color-primary-gradient;
-        top: 45%;
-        outline: none;
-        text-align: center;
-      } 
+      .carousel-inner {
+        height: 100%;
+        padding: 2rem;
+        .carousel-item {
+          .card {
+            width: 23rem;
+            padding: 1em;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+            img {
+              border: 5px solid #1E5799;
+              border-radius: 50%;
+              width: 50%;
+            }
+            h5 {
+              color: $titles;
+            }
+            p {
+              color: $info;
+              font-style: italic;
+            }
+          }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          width: max-content;
+          height: max-content;
+          border: none;
+          padding: 4px;
+          border-radius: $radius;
+          background-image: $color-primary-gradient;
+          top: 45%;
+          outline: none;
+          text-align: center;
+        } 
+      }
     }
   }
-}
-
 // ──────────CONTACT SECTION───────────────────────────────────────────────────────────
   .contact-section {
-    border-radius: $radius;
     color: $titles;
-    box-shadow: 0 1px 20px rgba(0, 0, 0, .4);
-    .write-us {
-      background-color: $color-light;
-      border-top-left-radius: $radius;
-      border-bottom-left-radius: $radius;
+      .bx-shadow {
+      box-shadow: 0px 0px 10px 3px rgba(119,129,139,0.4);
+      border-radius: $radius;
+      
+    }
 
+    .write-us {
+      background: white;
       h5 {
         color: #1E5799;
       }
 
       input[type="text"], input[type="email"], textarea {
-        color: $color-primary-hover;
+        color: $color-dark;
         width: 100%;
         box-sizing: border-box;
         letter-spacing: 1px;
@@ -613,8 +611,6 @@ main {
       background-image: linear-gradient(90deg, rgba(30, 87, 153, 0.7) 0%, rgba(101, 140, 186, 0.6) 100%), url("./img/page-img/img-contact.jpg");
       background-size: cover;
       background-position: center;
-      border-top-right-radius: $radius;
-      border-bottom-right-radius: $radius;
 
       h5 {
         color: $color-light;

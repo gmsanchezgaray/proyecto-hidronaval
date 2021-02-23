@@ -1,4 +1,4 @@
-<div class="teacher-section container mb-6">
+<div id="instructor" class="teacher-section container pb-6">
     <div class="row text-center justify-content-center">
         <div class="data-teacher">
             <p class="decorators mb-1">Instructor</p>
