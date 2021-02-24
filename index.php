@@ -98,11 +98,17 @@
     include_once './sections/index-sections/testimonios.php';
     ?>
 <!-----------------------------CONTACTO----------------------------->
+    
     <?php
     include_once './sections/index-sections/contacto.php';
     ?>
+
     </div>
 </main>
+
+<!---------------------------SKEW-PRE-FOOTER----------------------------->
+
+<div class="skew-contact"></div>
 
 <!-----------------------------FOOTER----------------------------->
 <?php

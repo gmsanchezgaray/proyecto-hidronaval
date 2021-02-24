@@ -1,4 +1,4 @@
-<div id="contacto" class="contact-section pb-6">
+<div id="contacto" class="contact-section position-relative">
     <div class="bx-shadow row overflow-hidden">
         <div class="col-md-7 p-5 write-us">
             <h5 class="mb-5">Envíanos un mensaje</h5>
