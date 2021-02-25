@@ -12,8 +12,7 @@
 
             <li>Manejar los actuadores más comunes de las aplicaciones hidráulicas (desarrollando tanto función como cálculo).</li>
         </ul>
-
-        <a href="#" class="btn hidro-buttons">Ver Mas</a>
+        
     </div>
     <div class="skills-buttons col-md-5 m-auto">
         <div class="row text-center">
