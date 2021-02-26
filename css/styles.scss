@@ -289,7 +289,7 @@ main {
           transition: all .5s ease;
           letter-spacing: 1px;
           color: $color-primary;
-
+          transition: all .3s;
           span {
             display: block;
             margin-top: 0;
@@ -303,21 +303,30 @@ main {
             transform: translateY(-5px);
             box-shadow: 4px 4px 15px rgba(0, 0, 0, .45);
             font-weight: bold;
-          }
-          &:active {
-            transform: translateY(-5px);
-            background: linear-gradient(140deg, $color-primary, $color-primary-hover);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, .15);
-            color: $color-light;
-            font-weight: bold;
-            svg > path {
-              fill: $color-light;
             }
           }
         }
       }
     }
   }
+
+// ACTIVE BUTTONS JS
+
+.btn-tab-active {
+  transform: translateY(-5px);
+  background: linear-gradient(140deg, $color-primary, $color-primary-hover);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .15);
+  color: $color-light;
+  font-weight: bold;
+  transition: all .3s;
+  svg > path {
+    fill: $color-light !important;
+  }
+  span {
+    color: $color-light;
+  }
+}
+
 // ──────────INSTRUCTOR SECTION───────────────────────────────────────────────────────────
   .teacher-section {
     .row .data-teacher {
@@ -631,7 +640,6 @@ main {
       }
     }
   }
-}
 
 // SKEW-PRE-FOOTER
 
