@@ -1,8 +1,6 @@
 <div class="skills row mx-auto align-content-center justify-content-between pb-6">
     <div class="skills-info col-sm-12 col-lg-6">
-        <h2 class="mb-4">Al finalizar el Curso de Hidráulica, <br>
-        <span>estarás capacitado para:</span>
-        </h2>
+        <h2 class="mb-4 tab-title animate__animated">Somos expertos en Oleohidraulica Naval</h2>
         
         <ul class="tab-info animate__animated">
             <li>Conocer los principios físicos que rigen las aplicaciones hidráulicas complementándolos con el conocimiento sobre fluidos.</li>

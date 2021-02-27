@@ -11,7 +11,7 @@
             <div class="teacher-img-container col-md-5 text-center">
                 <img class="img-teacher" src="css\img\page-img\img-instructor.jpg" alt="instructor">
             </div>
-            <div class="teacher-items col-md-6 mt-5 m-md-4">
+            <div class="teacher-items col-sm-12 col-lg-6 mt-5 m-md-4">
                 <h3 class="fs-2">Dario Omar Pistillo</h3>
 
                 <ul>

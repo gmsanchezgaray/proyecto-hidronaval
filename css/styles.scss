@@ -267,10 +267,6 @@ main {
     .skills-info {
       h2 {
         color: $titles;
-
-        span {
-          color: $info;
-        }
       }
 
       .tab-info {
@@ -309,7 +305,6 @@ main {
         }
       }
     }
-  }
 
 // ACTIVE BUTTONS JS
 
@@ -518,10 +513,10 @@ main {
       }
     }
     #carousel {
-      height: 400px;
-      margin-bottom: 8rem !important;
+      height: 600px;
+      margin-bottom: 6rem !important;
       .carousel-indicators {
-        bottom: -12%;
+        bottom: 5%;
         button{
           margin: 0 1em;
           width: 1em;
@@ -541,6 +536,8 @@ main {
       .carousel-inner {
         height: 100%;
         padding: 2rem;
+        display: flex;
+        align-items: center;
         .carousel-item {
           .card {
             width: 23rem;
@@ -644,7 +641,7 @@ main {
       }
     }
   }
-
+}
 // SKEW-PRE-FOOTER
 
 .skew-contact {
