@@ -63,9 +63,9 @@ const changeData = (index) => {
 }
 
 const resetAnimation = () => {
-    tabInfo.classList.add('animate__fadeInLeft');
+    tabInfo.classList.add('animate__slideInLeft');
     setTimeout(() => {
-        tabInfo.classList.remove('animate__fadeInLeft');
+        tabInfo.classList.remove('animate__slideInLeft');
     },900)
 }
 
@@ -74,3 +74,4 @@ const resetBtnActive = () => {
         e.classList.remove('btn-tab-active');
     })
 }
+

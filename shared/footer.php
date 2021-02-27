@@ -1,5 +1,5 @@
 <footer class="container-fluid px-0">
-    <div class="container">
+    <div class="container footer-container">
         <div class="row justify-content-around py-4 mx-0">
             <div class="col-12 col-md-3">
                 <img class="mb-2" src="./css/img/img-logo-light.svg" alt="" height="64">
