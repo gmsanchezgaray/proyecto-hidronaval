@@ -1,6 +1,5 @@
 <div class="skills row mx-auto align-content-center justify-content-between pb-6">
-    <div class="skills-info col-md-6">
-        <span class="decorators">Habilidades</span>
+    <div class="skills-info col-sm-12 col-lg-6">
         <h2 class="mb-4">Al finalizar el Curso de Hidráulica, <br>
         <span>estarás capacitado para:</span>
         </h2>
@@ -14,7 +13,7 @@
         </ul>
 
     </div>
-    <div class="skills-buttons col-md-5 m-auto">
+    <div class="skills-buttons col-sm-12 col-lg-5 m-auto">
         <div class="row text-center">
 
             <button class="btn text-uppercase tab-info-btn order-2">

@@ -1,0 +1,34 @@
+@media (max-width: 991px) {
+    .hidro-cards {
+        bottom: -18%;
+        .hidro-cards-container {
+            flex-wrap: wrap;
+        }
+    }
+
+    #nosotros {
+        padding-top: 14rem !important;
+        .img-nos-container {
+            order: 2;
+        }
+        .info-nos {
+            margin-bottom: 3rem !important;
+        }
+    }
+
+    .skills-info {
+        order: 2;
+    }
+
+    .skills-buttons {
+        margin-bottom: 3rem !important;
+    }
+
+    .gallery-item {
+        width: 70% !important;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+    }
+}

@@ -4,7 +4,7 @@
         <img src="css\img\page-img\img-estudios.png" alt="img-estudios">
     </div>
 
-    <div class="col-md-6 my-auto info-nos">
+    <div class="col-sm-12 col-lg-6 my-auto info-nos">
         <span class="decorators">NOSOTROS</span>
         <h2 class="mb-4">Hidronaval es una organización de <span class="text-muted">capacitacion.</span></h2>
         <h4 class="mb-4">Técnicos que capacitan a mas técnicos</h4>

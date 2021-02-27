@@ -1,5 +1,5 @@
 <section class="hidro-cards position-absolute w-100">
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex hidro-cards-container justify-content-center">
         <div class="card">
             <img src="css\img\img-cards-collection\instructor-capacitado-card.svg" alt="instructor-img">
             <div class="card-body">

@@ -1,4 +1,4 @@
-<div class="testimony-container container pb-6">
+<div class="testimony-container container">
     <div class="row text-center justify-content-center">
         <div class="testimony-intro col-sm-5 text-success">
             <span class="decorators">Testimonios</span>
@@ -24,19 +24,19 @@
             </div>
             <div class="carousel-item">
                 <div class="card mx-auto text-center">
-                    <img src="css\img\img-testimonials\img-example-2.jpg" class="card-img-top mx-auto mb-3" alt="...">
+                    <img src="css\img\img-testimonials\recomend-2.jpg" class="card-img-top mx-auto mb-3" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Carla Montoya</h5>
-                        <p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+                        <h5 class="card-title">Fabian Quiroga</h5>
+                        <p class="card-text">"Cursos excelentes en terminos técnicos, teoricos y prácticos, buenas expectativas en conocimiento personal en la salida laboral."</p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="card mx-auto text-center">
-                    <img src="css\img\img-testimonials\img-example-3.png" class="card-img-top mx-auto mb-3" alt="...">
+                    <img src="css\img\img-testimonials\recomend-1.jpg" class="card-img-top mx-auto mb-3" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Mariano Rodriguez</h5>
-                        <p class="card-text">"The card title and make up the bulk of the card's content title and make up the bulk of the card's content."</p>
+                        <h5 class="card-title">Pablo Germán Bertini</h5>
+                        <p class="card-text">"Curso excelente dictado, con todas las normas de seguridad y tambien de calidad."</p>
                     </div>
                 </div>
             </div>
