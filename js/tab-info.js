@@ -9,7 +9,8 @@ const dataUl = [
         <li>Aprenderas muchas habilidades dentro del curso relacionadas con el aprendizaje tecnico de Oleohidraulica naval</li>
         <li>Trabajaras en habilidades unicas y demandadas</li>
         <li>Elementos de lista de prueba en tab "Habilidades"</li>
-    `
+    `,
+        title: 'Oleohidraulica'
     },
     {
         data: `
@@ -35,8 +36,6 @@ const dataUl = [
     `
     }
 ]
-
-console.log(tabButtons);
 
 /* DATA CHANGE - Se recorren los botones almacenados en la variable tabButtons y se les asigna el escuchador de eventos "click", al ocurrir esto sucede lo siguiente:
 

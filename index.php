@@ -17,7 +17,7 @@
 </div>
 
 <header class="header-container position-relative">
-    <nav class="main-nav navbar navbar-expand-md navbar-dark">
+    <nav class="main-nav navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="css/img/img-logo-light.svg" height="60px" alt="img-logo-hidronaval">
@@ -51,9 +51,9 @@
     </nav>
     <div class="container h-80">
         <div class="row align-items-center h-80">
-            <div class="col-sm-12 col-md-6 text-center text-md-start">
+            <div class="col-sm-12 col-md-8 col-lg-6 text-center text-md-start">
                 <h1>Cursos de <br>Oleohidraulica Naval</h1>
-                <p class="d-none d-md-block">Hemos diseñado cursos de Oleohidráulica. Si quieres conocer más sobre Olehidráulica, te ofrecemos una
+                <p>Hemos diseñado cursos de Oleohidráulica. Si quieres conocer más sobre Olehidráulica, te ofrecemos una
                     Introducción <b>GRATIS</b>.</p>
                 <form>
                     <div class="input-group mb-3">

@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+    .hidro-cards {
+        bottom: -20%;
+        .hidro-cards-container {
+            flex-wrap: wrap;
+        }
+    }
+
+    #nosotros {
+        padding-top: 15rem !important;
+        .img-nos-container {
+            order: 2;
+        }
+        .info-nos {
+            margin-bottom: 3rem !important;
+        }
+    }
+
+}
