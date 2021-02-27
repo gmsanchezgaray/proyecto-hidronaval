@@ -1,27 +1,30 @@
 var tabInfo = document.querySelector('.tab-info');
 var tabButtons = document.querySelectorAll('.tab-info-btn');
+var tabTitle = document.querySelector('.tab-title');
 
 // INFO DATA TABS - Se almacena en un array de objetos la informacion referente a cada una de las opciones de seccion bajo la propiedad "data"
 
 const dataUl = [
     {
+        title: 'Animate a desarrollar nuevas habilidades',
         data: `
         <li>Aprenderas muchas habilidades dentro del curso relacionadas con el aprendizaje tecnico de Oleohidraulica naval</li>
-        <li>Trabajaras en habilidades unicas y demandadas</li>
+        <li>Trabajaras en habilidades unicas y demandadas dentro del sector</li>
         <li>Elementos de lista de prueba en tab "Habilidades"</li>
-    `,
-        title: 'Oleohidraulica'
-    },
-    {
-        data: `
-        <li>Conocer los principios físicos que rigen las aplicaciones hidráulicas complementándolos con el conocimiento sobre fluidos.</li>
-
-        <li>Distinguir la estructura básica de una <strong>centralina hidráulica</strong>, diferenciando entre los diferentes tipos de bombas a instalar y los accesorios que esta pueda presentar.</li>
-
-        <li>Manejar los actuadores más comunes de las aplicaciones hidráulicas (desarrollando tanto función como cálculo).</li>
     `
     },
     {
+        title: 'Somos expertos en Oleohidraulica Naval',
+        data: `
+        <li>Conoceras los principios físicos que rigen las aplicaciones hidráulicas complementándolos con el conocimiento sobre fluidos.</li>
+
+        <li>Distinguiras la estructura básica de una <strong>centralina hidráulica</strong>, diferenciando entre los diferentes tipos de bombas a instalar y los accesorios que esta pueda presentar.</li>
+
+        <li>Aprenderas a manejar los actuadores más comunes de las aplicaciones hidráulicas (desarrollando tanto función como cálculo).</li>
+    `
+    },
+    {
+        title: 'Demostrá todo lo que aprendiste',
         data: `
         <li>Recibiras un certificado avalado por diferentes entidades del area naval</li>
         <li>Demostraras tu asistencia y compromiso con la capacitacion que conlleva ser Técnico Oleohidraulico</li>
@@ -29,9 +32,10 @@ const dataUl = [
     `
     },
     {
+        title: 'Tus conocimientos son nuestro objetivo',
         data: `
         <li>Nuestro objetivo es expandir los conocimientos del area de Oleohidraulica Naval para capacitar a los futuros técnicos que decidan desarrollarse en la misma</li>
-        <li>Contamos con </li>
+        <li>Contamos con el apoyo de diferentes recursos que nos garantizan tu correcto aprendizaje en la materia</li>
         <li>Elementos de lista de prueba en tab "Objetivos"</li>
     `
     }
@@ -59,14 +63,20 @@ tabButtons.forEach((e,indexBtn) => {
 })
 
 const changeData = (index) => {
-    return tabInfo.innerHTML = dataUl[index].data;
+    tabInfo.innerHTML = dataUl[index].data;
+    tabTitle.innerHTML = dataUl[index].title;
 }
 
 const resetAnimation = () => {
     tabInfo.classList.add('animate__slideInLeft');
     setTimeout(() => {
         tabInfo.classList.remove('animate__slideInLeft');
-    },900)
+    },900);
+
+    tabTitle.classList.add('animate__slideInDown');
+    setTimeout(() => {
+        tabTitle.classList.remove('animate__slideInDown');
+    },900);
 }
 
 const resetBtnActive = () => {

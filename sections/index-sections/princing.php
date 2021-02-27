@@ -1,6 +1,6 @@
 <div id="cursos" class="pricing-container pb-6">
     <div class="row text-center justify-content-center">
-        <div class="col-sm-5">
+        <div class="col-sm-12 col-lg-6">
             <span class="decorators">Cursos</span>
             <h5>Tenemos diferentes opciones según tus conocimientos</h5>
         </div>
