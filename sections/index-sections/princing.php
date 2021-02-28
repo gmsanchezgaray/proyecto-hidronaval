@@ -1,14 +1,12 @@
 <div id="cursos" class="pricing-container pb-6">
-    <div class="row text-center justify-content-center">
-        <div class="col-sm-12 col-lg-6">
-            <span class="decorators">Cursos</span>
-            <h5>Tenemos diferentes opciones según tus conocimientos</h5>
-        </div>
+    <div class="text-center">
+        <span class="decorators">Cursos</span>
+        <h5>Tenemos diferentes opciones según tus conocimientos</h5>
     </div>
 
-    <div class="row justify-content-center my-4">
+    <div class="row justify-content-around my-5">
         <!--//? First Card-->
-        <div class="card pricing-card p-0 text-dark mb-3 mx-4 col-lg-4">
+        <div class="card pricing-card p-0 text-dark mb-5 mx-3 col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="pricing-card-header">
                 <div class="pricing-card-titles">
                     <h4 class="card-title text-center">Curso Introductorio</h4>
@@ -89,7 +87,7 @@
             </div>
         </div>
         <!--//? Second Card-->
-        <div class="card pricing-card--recommended p-0 text-dark mb-3 mx-4 col-lg-4">
+        <div class="card pricing-card--recommended p-0 text-dark mb-5 mx-3 col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="pricing-card-header">
                 <div class="recommended text-uppercase small">
                     <span>
@@ -176,7 +174,7 @@
             </div>
         </div>
         <!--//? Thirst Card-->
-        <div class="card pricing-card p-0 text-dark mb-3 mx-4 col-lg-4">
+        <div class="card pricing-card p-0 text-dark mb-5 mx-3 col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="pricing-card-header">
                 
                 <div class="pricing-card-titles">
