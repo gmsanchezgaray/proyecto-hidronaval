@@ -1,6 +1,6 @@
 <div id="contacto" class="contact-section position-relative">
-    <div class="bx-shadow row overflow-hidden">
-        <div class="col-md-7 p-5 write-us">
+    <div class="bx-shadow d-flex flex-wrap overflow-hidden">
+        <div class="col-12 col-md-7 p-5 write-us">
             <h5 class="mb-5">Envíanos un mensaje</h5>
             <form class="form-line">
                 <div class="row mb-3 gy-2">
@@ -39,7 +39,7 @@
                     <div class="col-md-12">
                         <div class="position-relative">
                             <label for="text-content" class="form-label">Mensaje</label>
-                            <textarea class=" input-effect" name="text-content" id="text-content" rows="3"></textarea>
+                            <textarea class="form-control input-effect" name="text-content" id="text-content" rows="3"></textarea>
                             <span class="focus-border"></span>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                 <button type="submit" class="btn hidro-buttons text-uppercase mt-3">enviar mensaje</button>
             </form>
         </div>
-        <div class="col-md-5 p-5 info-contact">
+        <div class="col-12 col-md-5 p-5 info-contact">
             <h5 class="mb-5">Informacion de contacto</h5>
             <div class="h-75 d-flex flex-column justify-content-between">
                 <p>

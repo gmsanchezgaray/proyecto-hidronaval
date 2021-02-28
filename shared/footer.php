@@ -1,10 +1,10 @@
 <footer class="container-fluid px-0">
     <div class="container footer-container">
-        <div class="row justify-content-around py-4 mx-0">
-            <div class="col-12 col-md-3">
+        <div class="row justify-content-around py-5 mx-0">
+            <div class="col-12 col-md-12 col-lg-3 text-center text-lg-start pb-5 pb-lg-0">
                 <img class="mb-2" src="./css/img/img-logo-light.svg" alt="" height="64">
             </div>
-            <div class="col-6 col-md-1">
+            <div class="col-6 col-md-3 col-lg-2 text-center text-lg-start">
                 <h5 class="mb-3">Nosotros</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class=" text-decoration-none" href="#">Institución</a></li>
@@ -13,7 +13,7 @@
                     <li><a class=" text-decoration-none" href="#">SAON</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-1">
+            <div class="col-6 col-md-3 col-lg-2 text-center text-lg-start">
                 <h5 class="mb-3">Cursos</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class=" text-decoration-none" href="#">Introducción</a></li>
@@ -22,7 +22,7 @@
                     <li><a class=" text-decoration-none" href="#">FAQ’s</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3 text-center text-lg-start pt-4 pt-lg-0">
                 <h5 class="mb-3">Subscríbete para recibir noticias</h5>
                 <form class="row-cols-1 my-4">
                     <div class="input-group mb-3">
