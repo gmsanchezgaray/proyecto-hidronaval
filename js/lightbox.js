@@ -1,4 +1,4 @@
-/*******CARGA DEL LIGHTBOX AL INICIAR LA PAGINA**********/
+/*******LOADER LIGHTBOX ON DOCUMENT READY**********/
 
 var containerLight = document.querySelector('.lightbox-container')
 
@@ -8,7 +8,7 @@ document.onreadystatechange = () => {
     }
 }
 
-/***********OBJETOS E INFO DE IMAGENES*******************/
+/***********LIGHTBOX DATA WORKS*******************/
 
     const works = [
         {
@@ -30,47 +30,51 @@ document.onreadystatechange = () => {
             title: 'San Matias',
             date: '08/04/2012',
             description: 'Barco San Matias'
-        },
-        {
-            title: 'Velero en el Caribe',
-            date: '05/07/2014',
-            description: 'Aca se grabó Danzakuduro.'
-        },
-        {
-            title: 'Replica del Titanic',
-            date: '12/08/1997',
-            description: 'Una replica de como hubiera sido amarrado el Titanic si Leo Di Caprio hubiera agarrado el timon, y no a Rose.'
         }
     ]
 
 /*************LIGHTBOX VARS************************/
 
-var galleryImages = document.querySelectorAll('.img-gallery-works');
+var galleryImages = document.querySelectorAll('.img-work');
 var lightboxData = document.querySelector('.lightbox-data');
-var lightboxInfo = document.querySelector('.lightbox-info')
+var lightboxInfo = document.querySelector('.lightbox-info');
+var open = document.querySelector('.show-lightx');
 var close = document.querySelector('.close-lightbox');
+
+
+/************LIGHTBOX OPEN/CLOSE***********************/
+
+open.addEventListener('click',() => {
+    containerLight.classList.add('show');
+})
+
+close.addEventListener('click', () => {
+    containerLight.classList.remove('show');
+})
 
 /************LIGHTBOX FUNCTION***********************/
 
 galleryImages.forEach((e,index) => {
-    e.addEventListener('click', () => {
-        showLightbox(e.src,index);
+    e.addEventListener('click',() => {
+        changeInfo(e.src,index);
+        resetWorkActive();
+        e.classList.add('work-selected');
     })
 })
 
-const showLightbox = (img,indexImg) => {
-    lightboxData.style.backgroundImage = `url(${img})`;
-
+const changeInfo = (src,indexWork) => {
+    lightboxData.style.backgroundImage = `url(${src})`;
+    
     lightboxInfo.innerHTML = `
-    <h3 class="light_title">${works[indexImg].title}</h3>
-    <p class="small work-date">Fecha: ${works[indexImg].date} </p>
+    <h3>${works[indexWork].title}</h3>
+    <span class="work-date">${works[indexWork].date}</span>
     <hr>
-    <p class="work-description">${works[indexImg].description}</p>
+    <p class="work-description m-0">${works[indexWork].description}</p>
     `
-
-    containerLight.classList.toggle('show');
 }
 
-close.addEventListener('click', () => {
-    containerLight.classList.toggle('show');
-})
+const resetWorkActive = () => {
+    galleryImages.forEach(e => {
+        e.classList.remove('work-selected');
+    })
+}
