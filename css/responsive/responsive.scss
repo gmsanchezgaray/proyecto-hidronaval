@@ -1,4 +1,8 @@
 @media (max-width: 991px) {
+    .nav-item > a:hover {
+        transform: none !important;
+    }
+
     .hidro-cards {
         bottom: -18%;
         .hidro-cards-container {
@@ -30,5 +34,9 @@
 
     .footer-container {
         max-width: 1200px;
+    }
+
+    .teacher-items > ul {
+        list-style-position: inside !important;
     }
 }

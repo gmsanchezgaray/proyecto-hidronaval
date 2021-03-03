@@ -9,9 +9,29 @@
     </span>
 
     <div class="container lightbox-data">
-
         <div class="lightbox-info p-4">
-            
+            <h3>Polaris</h3>
+            <span class="work-date">22/03/2013</span>
+            <hr>
+            <p class="work-description m-0">Este es uno de los trabajos posta, pero todavia no tengo la descripcion ni la de los demas, mi viejo iba a conseguir la data.</p>
+        </div>
+    </div>
+
+    <div class="container lightbox-tab mb-4 flex-wrap">
+        <div class="img-work-container">
+            <img src="css\img\galeria-trabajos\img-polaris.png" class="img-work work-selected" alt="img-polaris">
+        </div>
+
+        <div class="img-work-container">
+            <img src="css\img\galeria-trabajos\Rubimar.jpg" class="img-work" alt="img-rubimar">
+        </div>
+
+        <div class="img-work-container">
+            <img src="css\img\galeria-trabajos\San Julian.JPG" class="img-work" alt="img-san-julian">
+        </div>
+
+        <div class="img-work-container">
+            <img src="css\img\galeria-trabajos\San Matias.JPG" class="img-work" alt="img-san-matias">
         </div>
     </div>
 </div>
@@ -82,14 +102,21 @@
     include_once './sections/index-sections/nosotros.php';
     ?>
 <!-----------------------------TABS CONTENIDOS----------------------------->
-    <?php
-    include_once './sections/index-sections/tab-information.php';
-    ?>
+
+        <?php
+        include_once './sections/index-sections/tab-information.php';
+        ?>
+    </div>
 <!-----------------------------INSTRUCTOR----------------------------->
+    <div class="container-fluid">
+
     <?php
     include_once './sections/index-sections/instructor.php';
     ?>
+
+    </div>
 <!-----------------------------PRICING----------------------------->
+    <div class="container">
     <?php
     include_once './sections/index-sections/princing.php';
     ?>
