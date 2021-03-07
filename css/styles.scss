@@ -354,7 +354,11 @@ main {
   }
 }
 // ──────────INSTRUCTOR SECTION───────────────────────────────────────────────────────────
+.instructor2{
+  background: linear-gradient(110deg, #1e5799 0%, #658cba 43%,#fff 43%);
+}
   .teacher-section {
+    padding-top: 3rem;
     .row .data-teacher {
       p {
         margin-bottom: 0;
@@ -366,9 +370,9 @@ main {
     .teacher-works {
       .teacher-img-container {
         .img-teacher {
-          width: 350px;
+          // width: 350px;
           height: 350px;
-          border-radius: 50%;
+          // border-radius: 50%;
           object-fit: cover;
         }
       }
